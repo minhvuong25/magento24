@@ -570,6 +570,14 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/magento/module-review-sample-data" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/magento/module-catalog-rule-sample-data" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/magento/module-bundle-sample-data" />
+      <excludeFolder url="file://$MODULE_DIR$/var" />
+      <excludeFolder url="file://$MODULE_DIR$/setup" />
+      <excludeFolder url="file://$MODULE_DIR$/dev" />
+      <excludeFolder url="file://$MODULE_DIR$/phpserver" />
+      <excludeFolder url="file://$MODULE_DIR$/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/pub" />
+      <excludeFolder url="file://$MODULE_DIR$/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/generated" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

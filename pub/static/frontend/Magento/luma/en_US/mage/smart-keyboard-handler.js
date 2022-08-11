@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/lib/web/mage/smart-keyboard-handler.js
+/home/minhvuong/Work/htdocs/magento24/lib/web/mage/smart-keyboard-handler.js

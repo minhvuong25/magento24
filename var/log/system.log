@@ -2888,3 +2888,548 @@ Stack trace:
 #40 /home/minhvuong/Work/htdocs/magento/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
 #41 /home/minhvuong/Work/htdocs/magento/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
 #42 {main} {"report_id":"fed03e8ec0b366092ceab7c3381af3d6f9184ae5a51b3bb33fc9cf6e5126e563"} []
+[2022-08-10T07:09:34.569484+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2022-08-10T07:10:26.913748+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2022-08-10T07:12:10.673929+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2022-08-10T07:16:55.722812+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2022-08-10T07:18:24.660452+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2022-08-10T07:27:55.567444+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/Status.php(187): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/Status.php(167): Magento\Framework\Module\Status->getAllModules()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/AbstractModuleManageCommand.php(84): Magento\Framework\Module\Status->getModulesToChange()
+#5 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\AbstractModuleManageCommand->execute()
+#6 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#10 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2022-08-10T07:28:28.343759+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/Status.php(187): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/Status.php(167): Magento\Framework\Module\Status->getAllModules()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/AbstractModuleManageCommand.php(84): Magento\Framework\Module\Status->getModulesToChange()
+#5 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\AbstractModuleManageCommand->execute()
+#6 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#10 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2022-08-10T07:29:58.287241+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2022-08-10T07:30:19.446419+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2022-08-10T07:35:11.406504+00:00] main.ERROR: Command "setup:upgrate" is not defined.
+
+Did you mean one of these?
+    braintree:migrate
+    setup:backup
+    setup:config:set
+    setup:db-data:upgrade
+    setup:db-declaration:generate-patch
+    setup:db-declaration:generate-whitelist
+    setup:db-schema:upgrade
+    setup:db:status
+    setup:di:compile
+    setup:install
+    setup:performance:generate-fixtures
+    setup:rollback
+    setup:static-content:deploy
+    setup:store-config:set
+    setup:uninstall
+    setup:upgrade
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(237): Symfony\Component\Console\Application->find()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#3 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2022-08-10T07:37:12.905162+00:00] main.ERROR: Command "setup:upgrate" is not defined.
+
+Did you mean one of these?
+    braintree:migrate
+    setup:backup
+    setup:config:set
+    setup:db-data:upgrade
+    setup:db-declaration:generate-patch
+    setup:db-declaration:generate-whitelist
+    setup:db-schema:upgrade
+    setup:db:status
+    setup:di:compile
+    setup:install
+    setup:performance:generate-fixtures
+    setup:rollback
+    setup:static-content:deploy
+    setup:store-config:set
+    setup:uninstall
+    setup:upgrade
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(237): Symfony\Component\Console\Application->find()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#3 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2022-08-10T07:37:37.609000+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:37:37.663575+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:37:37.726106+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:37:37.900124+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:37:37.959125+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:37:38.023215+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:40:01.509750+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:40:01.570952+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:40:01.632674+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:40:01.814776+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:40:01.870090+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T07:40:01.931025+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T09:38:26.286210+00:00] main.CRITICAL: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected [] []
+[2022-08-10T09:38:26.287238+00:00] main.ERROR: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected [] []
+[2022-08-10T09:38:26.288508+00:00] main.CRITICAL: Magento\Framework\Exception\RuntimeException: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected in /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:131
+Stack trace:
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/ActionFactory.php(44): Magento\Framework\ObjectManager\ObjectManager->create()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Router/Base.php(306): Magento\Framework\App\ActionFactory->create()
+#4 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Router/Base.php(167): Magento\Framework\App\Router\Base->matchAction()
+#5 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Router\Base->match()
+#6 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Router\Base\Interceptor->___callParent()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Router\Base\Interceptor->Magento\Framework\Interception\{closure}()
+#8 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/Router/Base/Interceptor.php(23): Magento\Framework\App\Router\Base\Interceptor->___callPlugins()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/FrontController.php(144): Magento\Framework\App\Router\Base\Interceptor->match()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#12 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#13 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#14 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#15 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#16 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#17 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#18 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#19 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#20 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#21 /home/minhvuong/Work/htdocs/magento24/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#22 {main} {"report_id":"e48e387ba01fe9e7cc5addcc5070bd85c328f5b533964584215e99a058f19162"} []
+[2022-08-10T09:43:49.876795+00:00] main.CRITICAL: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected [] []
+[2022-08-10T09:43:49.876978+00:00] main.ERROR: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected [] []
+[2022-08-10T09:43:49.877131+00:00] main.CRITICAL: Magento\Framework\Exception\RuntimeException: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected in /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:131
+Stack trace:
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/ActionFactory.php(44): Magento\Framework\ObjectManager\ObjectManager->create()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Router/Base.php(306): Magento\Framework\App\ActionFactory->create()
+#4 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Router/Base.php(167): Magento\Framework\App\Router\Base->matchAction()
+#5 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Router\Base->match()
+#6 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Router\Base\Interceptor->___callParent()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Router\Base\Interceptor->Magento\Framework\Interception\{closure}()
+#8 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/Router/Base/Interceptor.php(23): Magento\Framework\App\Router\Base\Interceptor->___callPlugins()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/FrontController.php(144): Magento\Framework\App\Router\Base\Interceptor->match()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#12 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#13 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#14 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#15 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#16 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#17 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#18 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#19 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#20 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#21 /home/minhvuong/Work/htdocs/magento24/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#22 {main} {"report_id":"e48e387ba01fe9e7cc5addcc5070bd85c328f5b533964584215e99a058f19162"} []
+[2022-08-10T09:44:20.646392+00:00] main.CRITICAL: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected [] []
+[2022-08-10T09:44:20.646601+00:00] main.ERROR: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected [] []
+[2022-08-10T09:44:20.646770+00:00] main.CRITICAL: Magento\Framework\Exception\RuntimeException: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected in /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:131
+Stack trace:
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/ActionFactory.php(44): Magento\Framework\ObjectManager\ObjectManager->create()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Router/Base.php(306): Magento\Framework\App\ActionFactory->create()
+#4 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Router/Base.php(167): Magento\Framework\App\Router\Base->matchAction()
+#5 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Router\Base->match()
+#6 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Router\Base\Interceptor->___callParent()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Router\Base\Interceptor->Magento\Framework\Interception\{closure}()
+#8 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/Router/Base/Interceptor.php(23): Magento\Framework\App\Router\Base\Interceptor->___callPlugins()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/FrontController.php(144): Magento\Framework\App\Router\Base\Interceptor->match()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#12 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#13 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#14 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#15 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#16 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#17 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#18 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#19 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#20 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#21 /home/minhvuong/Work/htdocs/magento24/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#22 {main} {"report_id":"e48e387ba01fe9e7cc5addcc5070bd85c328f5b533964584215e99a058f19162"} []
+[2022-08-10T09:44:43.748427+00:00] main.CRITICAL: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected [] []
+[2022-08-10T09:44:43.748774+00:00] main.ERROR: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected [] []
+[2022-08-10T09:44:43.748922+00:00] main.CRITICAL: Magento\Framework\Exception\RuntimeException: Type Error occurred when creating object: Tigren\HelloWorld\Controller\index\Display\Interceptor, Too few arguments to function Tigren\HelloWorld\Controller\Index\Display::__construct(), 1 passed in /home/minhvuong/Work/htdocs/magento24/generated/code/Tigren/HelloWorld/Controller/index/Display/Interceptor.php on line 14 and exactly 2 expected in /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:131
+Stack trace:
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/ActionFactory.php(44): Magento\Framework\ObjectManager\ObjectManager->create()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Router/Base.php(306): Magento\Framework\App\ActionFactory->create()
+#4 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Router/Base.php(167): Magento\Framework\App\Router\Base->matchAction()
+#5 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Router\Base->match()
+#6 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Router\Base\Interceptor->___callParent()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Router\Base\Interceptor->Magento\Framework\Interception\{closure}()
+#8 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/Router/Base/Interceptor.php(23): Magento\Framework\App\Router\Base\Interceptor->___callPlugins()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/FrontController.php(144): Magento\Framework\App\Router\Base\Interceptor->match()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#12 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#13 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#14 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#15 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#16 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#17 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#18 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#19 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#20 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#21 /home/minhvuong/Work/htdocs/magento24/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#22 {main} {"report_id":"e48e387ba01fe9e7cc5addcc5070bd85c328f5b533964584215e99a058f19162"} []
+[2022-08-10T09:49:47.295687+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T09:49:47.352429+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T09:49:47.429270+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T09:49:47.716531+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T09:49:47.785041+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-10T09:49:47.844343+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T03:34:51.146625+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T03:34:51.147932+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T03:34:51.148055+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T03:34:51.148110+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T03:34:51.148141+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T03:34:51.148171+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T04:42:20.744982+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2022-08-11T04:44:12.304028+00:00] main.ERROR: The contents from the "/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml" file can't be read. Warning!file_get_contents(/home/minhvuong/Work/htdocs/magento24/app/code/Tigren/HelloWorld/etc/module.xml): Failed to open stream: No such file or directory
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#4 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2022-08-11T04:47:25.961893+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T04:47:26.015233+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T04:47:26.099119+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T04:47:26.306634+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T04:47:26.352506+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T04:47:26.404640+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T04:50:44.825408+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T04:50:44.826462+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T04:50:44.826563+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T04:50:44.826607+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T04:50:44.826636+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T04:50:44.826662+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T06:10:07.571447+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:10:07.615815+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:10:07.660222+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:10:07.828123+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:10:07.866805+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:10:07.913319+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:13:06.898561+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T06:13:06.900360+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T06:13:06.900466+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T06:13:06.900509+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T06:13:06.900535+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T06:13:06.900560+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-08-11T06:13:15.258116+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:13:15.258974+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:15:53.310926+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:15:53.311430+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:15:54.951673+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:15:54.951916+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:15:55.245091+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:15:55.246433+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:15:55.445672+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:15:55.445882+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:15:55.639137+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:15:55.639526+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:15:55.944688+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:15:55.944942+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:15:56.199630+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:15:56.199909+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:15:56.438541+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:15:56.438755+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:21.974089+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:21.974363+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:22.432721+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:22.433141+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:22.660986+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:22.661208+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:23.203598+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:23.203801+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:23.417801+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:23.418015+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:23.642926+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:23.643151+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:31.325875+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:31.326100+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:32.063473+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:32.063687+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:32.593933+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:32.594163+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:16:34.212944+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:16:34.213218+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:18:35.408082+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:18:35.477744+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:18:35.527231+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:18:35.691740+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:18:35.730347+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:18:35.778763+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:18:46.298763+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:18:46.298942+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:18:46.308647+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:18:46.308823+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:18:46.474150+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:18:46.474350+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:18:46.831368+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:18:46.831530+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:21:09.213636+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:21:09.297060+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:21:09.340201+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:21:09.513281+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:21:09.559877+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:21:09.605824+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:21:16.443177+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:21:16.443440+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:22:53.128825+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:22:53.219396+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:22:53.263318+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:22:53.415717+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:22:53.456687+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:22:53.504269+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:25:12.560511+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:25:12.560677+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:27:00.923894+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:27:01.007349+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:27:01.052024+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:27:01.227754+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:27:01.266899+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:27:01.310631+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:28:11.468843+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:28:11.511965+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:28:11.557426+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:28:11.713009+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:28:11.752123+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:28:11.795775+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:28:24.708791+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:28:24.708961+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:28:24.999702+00:00] main.CRITICAL: Class "Magento\Framework\App\Actsudoion\Context" does not exist
+Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2022-08-11T06:28:24.999876+00:00] main.ERROR: Class "Tigren\HelloWorld\Controller\Index\Display\Interceptor" does not exist [] []
+[2022-08-11T06:29:10.190563+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:29:10.295426+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:29:10.344310+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:29:10.503173+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:29:10.542352+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:29:10.586484+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:35:29.977660+00:00] main.ERROR: Command "setup:upgade" is not defined.
+
+Did you mean one of these?
+    setup:backup
+    setup:config:set
+    setup:db-data:upgrade
+    setup:db-declaration:generate-patch
+    setup:db-declaration:generate-whitelist
+    setup:db-schema:upgrade
+    setup:db:status
+    setup:di:compile
+    setup:install
+    setup:performance:generate-fixtures
+    setup:rollback
+    setup:static-content:deploy
+    setup:store-config:set
+    setup:uninstall
+    setup:upgrade
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(237): Symfony\Component\Console\Application->find()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#3 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2022-08-11T06:43:00.222918+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:43:00.307118+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:43:00.351792+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:43:00.509507+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:43:00.548788+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:43:00.593754+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:45:37.352135+00:00] main.ERROR: Circular sequence reference from 'Tigren_HelloWorld' to 'Tigren_HelloWorld'.
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(221): Magento\Framework\Module\ModuleList\Loader->expandSequence()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(139): Magento\Framework\Module\ModuleList\Loader->expandSequence()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/ModuleList/Loader.php(102): Magento\Framework\Module\ModuleList\Loader->sortBySequence()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(46): Magento\Framework\Module\ModuleList\Loader->load()
+#4 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Module/FullModuleList.php(66): Magento\Framework\Module\FullModuleList->getAll()
+#5 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(185): Magento\Framework\Module\FullModuleList->getNames()
+#6 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(142): Magento\Setup\Console\Command\ModuleStatusCommand->getDisabledModuleNames()
+#7 /home/minhvuong/Work/htdocs/magento24/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php(83): Magento\Setup\Console\Command\ModuleStatusCommand->showDisabledModules()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\ModuleStatusCommand->execute()
+#9 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#12 /home/minhvuong/Work/htdocs/magento24/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#13 /home/minhvuong/Work/htdocs/magento24/bin/magento(23): Symfony\Component\Console\Application->run()
+#14 {main} [] []
+[2022-08-11T06:46:55.798722+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:46:55.840074+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:46:55.883336+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:46:56.011740+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:46:56.048899+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:46:56.092380+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:53:54.982611+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:53:55.023321+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:53:55.067155+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:53:55.202829+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:53:55.240351+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:53:55.284437+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:58:15.909456+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:58:15.989763+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:58:16.034045+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:58:16.163164+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:58:16.201483+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2022-08-11T06:58:16.245205+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []

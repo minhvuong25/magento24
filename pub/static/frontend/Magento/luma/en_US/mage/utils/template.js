@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/lib/web/mage/utils/template.js
+/home/minhvuong/Work/htdocs/magento24/lib/web/mage/utils/template.js

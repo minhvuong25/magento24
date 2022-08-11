@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/lib/web/jquery/ui-modules/widgets/menu.js
+/home/minhvuong/Work/htdocs/magento24/lib/web/jquery/ui-modules/widgets/menu.js

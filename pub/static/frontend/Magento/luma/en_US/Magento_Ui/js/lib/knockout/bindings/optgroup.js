@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-ui/view/base/web/js/lib/knockout/bindings/optgroup.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-ui/view/base/web/js/lib/knockout/bindings/optgroup.js

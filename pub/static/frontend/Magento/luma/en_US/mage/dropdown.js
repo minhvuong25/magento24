@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/lib/web/mage/dropdown.js
+/home/minhvuong/Work/htdocs/magento24/lib/web/mage/dropdown.js

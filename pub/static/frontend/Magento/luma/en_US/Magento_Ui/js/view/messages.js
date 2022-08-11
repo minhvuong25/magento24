@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-ui/view/frontend/web/js/view/messages.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-ui/view/frontend/web/js/view/messages.js

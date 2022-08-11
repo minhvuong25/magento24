@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-theme/view/frontend/web/js/cookie-status.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-theme/view/frontend/web/js/cookie-status.js

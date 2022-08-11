@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/lib/web/mage/validation.js
+/home/minhvuong/Work/htdocs/magento24/lib/web/mage/validation.js
