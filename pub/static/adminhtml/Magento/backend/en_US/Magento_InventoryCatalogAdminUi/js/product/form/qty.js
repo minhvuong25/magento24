@@ -1,0 +1,1 @@
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-inventory-catalog-admin-ui/view/adminhtml/web/js/product/form/qty.js

@@ -1,0 +1,1 @@
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-admin-analytics/view/adminhtml/web/js/modal/component.js

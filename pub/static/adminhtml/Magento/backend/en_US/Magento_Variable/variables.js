@@ -1,0 +1,1 @@
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-variable/view/adminhtml/web/variables.js

@@ -1,0 +1,1 @@
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-directory/view/frontend/web/js/region-updater.js

@@ -1,0 +1,1 @@
+/home/minhvuong/Work/htdocs/magento24/vendor/paypal/module-braintree-core/view/adminhtml/web/js/system.js

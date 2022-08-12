@@ -321,7 +321,7 @@ return [
         'Magento_ThemeGraphQl' => 1,
         'Magento_CmsSampleData' => 1,
         'Magento_Translation' => 1,
-        'Magento_TwoFactorAuth' => 1,
+        'Magento_TwoFactorAuth' => 0,
         'Magento_GoogleOptimizer' => 1,
         'Magento_Ups' => 1,
         'Magento_SalesSampleData' => 1,
