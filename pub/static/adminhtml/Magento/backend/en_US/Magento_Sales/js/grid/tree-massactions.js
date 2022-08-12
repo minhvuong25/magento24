@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-sales/view/adminhtml/web/js/grid/tree-massactions.js

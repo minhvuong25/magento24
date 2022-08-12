@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-paypal/view/adminhtml/web/js/rules.js

@@ -15,4 +15,3 @@ class Display extends \Magento\Framework\App\Action\Action
         return $this->_pageFactory->create();
     }
 }
-

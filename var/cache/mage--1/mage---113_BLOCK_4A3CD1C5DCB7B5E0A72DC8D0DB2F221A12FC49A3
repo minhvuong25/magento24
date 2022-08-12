@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1660231507;s:6:"expire";i:1660317907;s:4:"tags";s:93:"113_CAT_P,113_BLOCK_HTML,113_CAT_P_1556,113_CAT_P_1812,113_CAT_P_1108,113_CAT_P_1896,113_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1660296714;s:6:"expire";i:1660383114;s:4:"tags";s:93:"113_CAT_P,113_BLOCK_HTML,113_CAT_P_1556,113_CAT_P_1812,113_CAT_P_1108,113_CAT_P_1896,113_MAGE";}
         <div class="block widget block-products-list grid">
                 <div class="block-content">
             <!-- new_products_content_widget_grid-->            <div class="products-grid grid">
@@ -44,9 +44,9 @@ for (var i = 0; i < prodImageContainersWrappers.length; i++) {
                  title="60%">
                 <span><span>60%</span></span>
             </div>
-            <script type="text&#x2F;javascript">var elem3YiPhl6x = document.querySelector('#rating-result_1556 span');
-if (elem3YiPhl6x) {
-elem3YiPhl6x.style.width = '60%';
+            <script type="text&#x2F;javascript">var elemBduXeAXb = document.querySelector('#rating-result_1556 span');
+if (elemBduXeAXb) {
+elemBduXeAXb.style.width = '60%';
 }</script>        </div>
                 <div class="reviews-actions">
             <a class="action view"
@@ -108,7 +108,7 @@ elem3YiPhl6x.style.width = '60%';
                                                                                                                                                                     <form data-role="tocart-form" data-product-sku="WS12" action="http://magento24.localhost.com/checkout/cart/add/uenc/aHR0cDovL21hZ2VudG8yNC5sb2NhbGhvc3QuY29tL3dvbWVuLmh0bWw%2C/product/1556/" method="post">
                                                             <input type="hidden" name="product" value="1556">
                                                             <input type="hidden" name="uenc" value="aHR0cDovL21hZ2VudG8yNC5sb2NhbGhvc3QuY29tL2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNEb3ZMMjFoWjJWdWRHOHlOQzVzYjJOaGJHaHZjM1F1WTI5dEwzZHZiV1Z1TG1oMGJXdyUyQy9wcm9kdWN0LzE1NTYv">
-                                                            <input name="form_key" type="hidden" value="bbKCm8F4fWP2a6Q6" />                                                            <button type="submit"
+                                                            <input name="form_key" type="hidden" value="A1qwrUPA1I0kR2CU" />                                                            <button type="submit"
                                                                     title="Add to Cart"
                                                                     class="action tocart primary">
                                                                 <span>Add to Cart</span>
@@ -169,9 +169,9 @@ for (var i = 0; i < prodImageContainersWrappers.length; i++) {
                  title="70%">
                 <span><span>70%</span></span>
             </div>
-            <script type="text&#x2F;javascript">var elemEbj5XtC8 = document.querySelector('#rating-result_1812 span');
-if (elemEbj5XtC8) {
-elemEbj5XtC8.style.width = '70%';
+            <script type="text&#x2F;javascript">var elem18JyPdfd = document.querySelector('#rating-result_1812 span');
+if (elem18JyPdfd) {
+elem18JyPdfd.style.width = '70%';
 }</script>        </div>
                 <div class="reviews-actions">
             <a class="action view"
@@ -233,7 +233,7 @@ elemEbj5XtC8.style.width = '70%';
                                                                                                                                                                     <form data-role="tocart-form" data-product-sku="WT09" action="http://magento24.localhost.com/checkout/cart/add/uenc/aHR0cDovL21hZ2VudG8yNC5sb2NhbGhvc3QuY29tL3dvbWVuLmh0bWw%2C/product/1812/" method="post">
                                                             <input type="hidden" name="product" value="1812">
                                                             <input type="hidden" name="uenc" value="aHR0cDovL21hZ2VudG8yNC5sb2NhbGhvc3QuY29tL2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNEb3ZMMjFoWjJWdWRHOHlOQzVzYjJOaGJHaHZjM1F1WTI5dEwzZHZiV1Z1TG1oMGJXdyUyQy9wcm9kdWN0LzE4MTIv">
-                                                            <input name="form_key" type="hidden" value="bbKCm8F4fWP2a6Q6" />                                                            <button type="submit"
+                                                            <input name="form_key" type="hidden" value="A1qwrUPA1I0kR2CU" />                                                            <button type="submit"
                                                                     title="Add to Cart"
                                                                     class="action tocart primary">
                                                                 <span>Add to Cart</span>
@@ -294,9 +294,9 @@ for (var i = 0; i < prodImageContainersWrappers.length; i++) {
                  title="80%">
                 <span><span>80%</span></span>
             </div>
-            <script type="text&#x2F;javascript">var elem3UeAY75O = document.querySelector('#rating-result_1108 span');
-if (elem3UeAY75O) {
-elem3UeAY75O.style.width = '80%';
+            <script type="text&#x2F;javascript">var elemIIiBc5Kq = document.querySelector('#rating-result_1108 span');
+if (elemIIiBc5Kq) {
+elemIIiBc5Kq.style.width = '80%';
 }</script>        </div>
                 <div class="reviews-actions">
             <a class="action view"
@@ -358,7 +358,7 @@ elem3UeAY75O.style.width = '80%';
                                                                                                                                                                     <form data-role="tocart-form" data-product-sku="WH05" action="http://magento24.localhost.com/checkout/cart/add/uenc/aHR0cDovL21hZ2VudG8yNC5sb2NhbGhvc3QuY29tL3dvbWVuLmh0bWw%2C/product/1108/" method="post">
                                                             <input type="hidden" name="product" value="1108">
                                                             <input type="hidden" name="uenc" value="aHR0cDovL21hZ2VudG8yNC5sb2NhbGhvc3QuY29tL2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNEb3ZMMjFoWjJWdWRHOHlOQzVzYjJOaGJHaHZjM1F1WTI5dEwzZHZiV1Z1TG1oMGJXdyUyQy9wcm9kdWN0LzExMDgv">
-                                                            <input name="form_key" type="hidden" value="bbKCm8F4fWP2a6Q6" />                                                            <button type="submit"
+                                                            <input name="form_key" type="hidden" value="A1qwrUPA1I0kR2CU" />                                                            <button type="submit"
                                                                     title="Add to Cart"
                                                                     class="action tocart primary">
                                                                 <span>Add to Cart</span>
@@ -477,7 +477,7 @@ for (var i = 0; i < prodImageContainersWrappers.length; i++) {
                                                                                                                                                                     <form data-role="tocart-form" data-product-sku="WP12" action="http://magento24.localhost.com/checkout/cart/add/uenc/aHR0cDovL21hZ2VudG8yNC5sb2NhbGhvc3QuY29tL3dvbWVuLmh0bWw%2C/product/1896/" method="post">
                                                             <input type="hidden" name="product" value="1896">
                                                             <input type="hidden" name="uenc" value="aHR0cDovL21hZ2VudG8yNC5sb2NhbGhvc3QuY29tL2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNEb3ZMMjFoWjJWdWRHOHlOQzVzYjJOaGJHaHZjM1F1WTI5dEwzZHZiV1Z1TG1oMGJXdyUyQy9wcm9kdWN0LzE4OTYv">
-                                                            <input name="form_key" type="hidden" value="bbKCm8F4fWP2a6Q6" />                                                            <button type="submit"
+                                                            <input name="form_key" type="hidden" value="A1qwrUPA1I0kR2CU" />                                                            <button type="submit"
                                                                     title="Add to Cart"
                                                                     class="action tocart primary">
                                                                 <span>Add to Cart</span>

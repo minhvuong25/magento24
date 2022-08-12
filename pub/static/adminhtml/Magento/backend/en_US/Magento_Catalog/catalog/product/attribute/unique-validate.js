@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-catalog/view/adminhtml/web/catalog/product/attribute/unique-validate.js

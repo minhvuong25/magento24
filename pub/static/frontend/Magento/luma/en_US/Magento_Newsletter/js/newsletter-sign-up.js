@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-newsletter/view/frontend/web/js/newsletter-sign-up.js

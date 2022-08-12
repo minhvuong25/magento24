@@ -1,0 +1,1 @@
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-swatches/view/frontend/web/js/catalog-add-to-cart.js
