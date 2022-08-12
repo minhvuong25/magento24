@@ -1,21 +1,33 @@
 <?php
-
-namespace Tigren\HelloWorld\Block;
 /*
- * Copyright (c) 2022. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
- * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
- * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
- * Vestibulum commodo. Ut rhoncus gravida arcu.
+ * @author    Tigren Solutions <info@tigren.com>
+ * @copyright Copyright (c) 2022 Tigren Solutions <https://www.tigren.com>. All rights reserved.
+ * @license   Open Software License ("OSL") v. 3.0
  */
 
-class Display extends \Magento\Framework\View\Element\Template
+namespace Tigren\HelloWorld\Block;
+
+use Magento\Framework\Phrase;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\View\Element\Template\Context;
+
+/**
+ * Class Display
+ * @package Tigren\HelloWorld\Block
+ */
+class Display extends Template
 {
-    public function __construct(\Magento\Framework\View\Element\Template\Context $context)
+    /**
+     * @param Context $context
+     */
+    public function __construct(Context $context)
     {
         parent::__construct($context);
     }
 
+    /**
+     * @return Phrase
+     */
     public function sayHello()
     {
         return __('Hello World');
