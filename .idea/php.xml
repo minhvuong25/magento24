@@ -572,9 +572,10 @@
       <path value="$PROJECT_DIR$/vendor/magento/module-review-sample-data" />
       <path value="$PROJECT_DIR$/vendor/magento/module-catalog-rule-sample-data" />
       <path value="$PROJECT_DIR$/vendor/magento/module-bundle-sample-data" />
+      <path value="$PROJECT_DIR$/vendor/magento/module-admin-adobe-ims" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.3">
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStan">

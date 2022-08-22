@@ -1,0 +1,77 @@
+<?php
+/*
+ * @author    Tigren Solutions <info@tigren.com>
+ * @copyright Copyright (c) 2022 Tigren Solutions <https://www.tigren.com>. All rights reserved.
+ * @license   Open Software License ("OSL") v. 3.0
+ */
+
+
+$collection = $block->getCollection();
+
+if ($collection->count()) {
+    ?>
+    <form action="<?= $this->getUrl('question/create/index') ?>">
+        <button type="submit" class="action submit " id="custom+btn"><a
+                href="http://magento24.localhost.com/question/create/index">Add Question</a>
+        </button>
+    </form>
+
+    <div class="table-wrapper orders-history">
+        <table class="data table table-order-items history" id="my-orders-table">
+            <caption class="table-caption"><?php echo __('Grid Record') ?></caption>
+            <thead>
+            <tr>
+                <th scope="col" class="col id"><?php echo __('entity_id') ?></th>
+                <th scope="col" class="col name"><?php echo __('title') ?></th>
+                <th scope="col" class="col email"><?php echo __('content') ?></th>
+                <th scope="col" class="col telephone"><?php echo __('created_at') ?></th>
+                <th scope="col" class="col author_id"><?php echo __('author_id') ?>
+                <th scope="col" class="col update">update</th>
+                <th scope="col" class="col delete">delete</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <?php
+            foreach ($collection as $item): ?>
+                <tr>
+                    <td data-th="<?= $block->escapeHtml(__('entity_id')) ?>" class="col entity_id">
+                        <?php echo $item->getEntity_id() ?>
+                    </td>
+                    <td data-th="<?= $block->escapeHtml(__('title')) ?>" class="col title">
+                        <?php echo $item->getTitle() ?>
+                    </td>
+                    <td data-th="<?= $block->escapeHtml(__('content')) ?>" class="col content">
+                        <?php echo $item->getContent() ?>
+                    </td>
+                    <td data-th="<?= $block->escapeHtml(__('created_at')) ?>" class="col created_at">
+
+                        <?php
+                        echo date('Y-m-d', strtotime($item->getCreatedAt()))
+
+                        ?></td>
+
+
+                    <td data-th="<?= $block->escapeHtml(__('author_id')) ?>"
+                        class="col author_id">
+                        <?php echo $item->getAuthorId() ?></td>
+                    <td><a href="">
+                            <button><a
+                                    href="http://magento24.localhost.com/question/edit/index?id=<?php echo $item->getEntityId() ?>">Update</a
+                            </button>
+                        </a></td>
+                    <td><a href="">
+                            <button><a
+                                    href="http://magento24.localhost.com/question/delete/index?id=<?php echo $item->getEntityId() ?>">Delete</a
+                            </button>
+                        </a></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <?php
+}
+?>
+
+

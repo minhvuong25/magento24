@@ -14135,6 +14135,9 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
   .pagebuilder-column-group {
     flex-wrap: wrap;
   }
+  .pagebuilder-column-line {
+    flex-wrap: wrap;
+  }
   [data-content-type='row'][data-appearance='contained'] [data-element='inner'] {
     background-attachment: scroll !important;
   }

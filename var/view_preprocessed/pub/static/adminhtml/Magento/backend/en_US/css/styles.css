@@ -12264,7 +12264,11 @@ body {
   box-shadow: rgba(197, 197, 197, 0.34) 0 0 0 1px;
   padding: 0;
 }
-.pagebuilder-content-type-affordance:not(.pagebuilder-column):before {
+.pagebuilder-content-type-affordance:not(
+    .pagebuilder-column
+    ):not(
+        .pagebuilder-column-group
+        ):before {
   display: none;
 }
 .pagebuilder-content-type-affordance > .pagebuilder-content-type.type-container.pagebuilder-row {
@@ -12402,7 +12406,7 @@ body {
   transform: translate(0, -50%);
   transition: opacity 200ms, visibility 200ms;
   visibility: hidden;
-  z-index: 105;
+  z-index: 1000;
 }
 .pagebuilder-options.pagebuilder-options-middle {
   right: 50%;
@@ -12816,10 +12820,12 @@ body {
 .pagebuilder-block-modal {
   margin-top: 15px;
 }
-.mobile-viewport .pagebuilder-content-type.pagebuilder-block .rendered-content .pagebuilder-column-group {
+.mobile-viewport .pagebuilder-content-type.pagebuilder-block .rendered-content .pagebuilder-column-group,
+.mobile-viewport .pagebuilder-content-type.pagebuilder-block .rendered-content .pagebuilder-column-line {
   flex-wrap: wrap;
 }
-.mobile-viewport .pagebuilder-content-type.pagebuilder-block .rendered-content .pagebuilder-column-group .pagebuilder-column {
+.mobile-viewport .pagebuilder-content-type.pagebuilder-block .rendered-content .pagebuilder-column-group .pagebuilder-column,
+.mobile-viewport .pagebuilder-content-type.pagebuilder-block .rendered-content .pagebuilder-column-line .pagebuilder-column {
   flex-basis: 100%;
 }
 .pagebuilder-content-type .pagebuilder-button-item {
@@ -12938,7 +12944,7 @@ body {
   width: 100%;
 }
 .pagebuilder-content-type.pagebuilder-column {
-  min-height: inherit;
+  min-height: 150px;
 }
 .pagebuilder-content-type.pagebuilder-column.empty-container {
   min-height: 300px;
@@ -13016,10 +13022,11 @@ body {
   }
 }
 .pagebuilder-content-type .pagebuilder-column-group {
-  border: none;
   box-sizing: border-box;
-  position: relative;
   width: 100%;
+}
+.pagebuilder-content-type .pagebuilder-column-group.no-column-line .element-children {
+  display: flex;
 }
 .pagebuilder-content-type .pagebuilder-column-group .drop-placeholder {
   background: rgba(142, 0, 6, 0.3);
@@ -13177,7 +13184,6 @@ body {
   opacity: 0;
 }
 .pagebuilder-content-type .pagebuilder-column-group > .element-children {
-  display: flex;
   padding: 0;
   position: relative;
   width: 100%;
@@ -13267,6 +13273,9 @@ body {
   vertical-align: center;
   width: 18px;
   z-index: 11;
+  /**
+     * @codingStandardsIgnoreStart
+     */
 }
 .pagebuilder-grid-size-indicator .admin__control-text {
   height: 89%;
@@ -13391,7 +13400,46 @@ body {
     box-shadow: 0 0 0 1px rgba(153, 153, 153, 0);
   }
 }
+.pagebuilder-content-type-hidden .pagebuilder-content-type.pagebuilder-column-group:before {
+  opacity: 1;
+  visibility: visible;
+}
 .mobile-viewport .pagebuilder-content-type .pagebuilder-column-group > .element-children {
+  flex-wrap: wrap;
+}
+.mobile-viewport .pagebuilder-content-type.children-min-height.pagebuilder-column {
+  width: 100% !important;
+}
+.pagebuilder-column-line {
+  position: relative;
+  width: 100%;
+}
+.pagebuilder-column-line .bottom-drop-placeholder,
+.pagebuilder-column-line .column-drop-placeholder {
+  background: rgba(142, 0, 6, 0.3);
+  display: none;
+  height: 30px;
+  z-index: 26;
+}
+.pagebuilder-column-line.resizing .pagebuilder-grid-size-indicator {
+  z-index: 105;
+}
+.pagebuilder-column-line.resizing .resize-grid {
+  opacity: 1;
+  transition: .5s opacity;
+  visibility: visible;
+}
+.pagebuilder-column-line.resizing .pagebuilder-options {
+  display: none;
+}
+.pagebuilder-column-line.resizing .pagebuilder-content-type .pagebuilder-empty {
+  opacity: 0;
+}
+.pagebuilder-column-line > .element-children {
+  display: flex;
+  width: 100%;
+}
+.mobile-viewport .pagebuilder-content-type .pagebuilder-column-line > .element-children {
   flex-wrap: wrap;
 }
 .mobile-viewport .pagebuilder-content-type.children-min-height.pagebuilder-column {
@@ -14347,6 +14395,9 @@ body {
 }
 .pagebuilder-slide .pagebuilder-overlay:not(.pagebuilder-poster-overlay) {
   max-width: 540px;
+}
+.pagebuilder-slide .tox .tox-dialog-wrap {
+  bottom: auto;
 }
 .pagebuilder-slide .pagebuilder-slide-button {
   -moz-transition: all 500ms ease;
@@ -15511,6 +15562,58 @@ div[data-content-type='tabs'] .tabs-content {
 .recaptcha_backend_type_for_recaptcha_backend_info_heading_notice strong,
 .recaptcha_frontend_type_for_recaptcha_frontend_info_heading_notice strong {
   color: #e22626;
+}
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+.adobe-ims-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.admin-ims-login-wrapper {
+  align-items: center;
+  background: url('../Magento_AdminAdobeIms/images/AdobeStock_232925587.png') no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: space-evenly;
+}
+.admin-ims-login-wrapper .adobe-ims-sign-in-modal {
+  background: #ffffff;
+  height: 581px;
+  width: 470px;
+}
+.admin-ims-login-wrapper .adobe-ims-sign-in-dialog {
+  display: flex;
+  flex-direction: column;
+}
+.admin-ims-login-wrapper .adobe-ims-sign-in-dialog p {
+  padding-bottom: 30px;
+}
+.admin-ims-login-wrapper .adobe-ims-button {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.admin-ims-login-wrapper .adobe-ims-note {
+  color: #ffffff;
+}
+.admin-ims-login-wrapper .adobe-ims-error-message-wrapper {
+  margin-bottom: 15px;
+}
+.adobe-ims-footer {
+  align-items: center;
+  background: #000000;
+  color: var(--spectrum-global-color-gray-600);
+  display: flex;
+  flex-shrink: 0;
+  height: 39px;
+  justify-content: flex-end;
+  padding-right: 15px;
+  text-align: right;
 }
 .hosted-control {
   height: 3.4rem;

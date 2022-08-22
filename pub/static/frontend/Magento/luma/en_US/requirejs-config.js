@@ -191,23 +191,6 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            quickSearch: 'Magento_Search/js/form-mini',
-            'Magento_Search/form-mini': 'Magento_Search/js/form-mini'
-        }
-    }
-};
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
             checkoutBalance:    'Magento_Customer/js/checkout-balance',
             address:            'Magento_Customer/js/address',
             changeEmailPassword: 'Magento_Customer/js/change-email-password',
@@ -281,6 +264,23 @@ var config = {
     map: {
         '*': {
             escaper: 'Magento_Security/js/escaper'
+        }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
+            quickSearch: 'Magento_Search/js/form-mini',
+            'Magento_Search/form-mini': 'Magento_Search/js/form-mini'
         }
     }
 };
@@ -383,14 +383,8 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            discountCode:           'Magento_Checkout/js/discount-codes',
-            shoppingCart:           'Magento_Checkout/js/shopping-cart',
-            regionUpdater:          'Magento_Checkout/js/region-updater',
-            sidebar:                'Magento_Checkout/js/sidebar',
-            checkoutLoader:         'Magento_Checkout/js/checkout-loader',
-            checkoutData:           'Magento_Checkout/js/checkout-data',
-            proceedToCheckout:      'Magento_Checkout/js/proceed-to-checkout',
-            catalogAddToCart:       'Magento_Catalog/js/catalog-add-to-cart'
+            downloadable: 'Magento_Downloadable/js/downloadable',
+            'Magento_Downloadable/downloadable': 'Magento_Downloadable/js/downloadable'
         }
     }
 };
@@ -406,8 +400,14 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            downloadable: 'Magento_Downloadable/js/downloadable',
-            'Magento_Downloadable/downloadable': 'Magento_Downloadable/js/downloadable'
+            discountCode:           'Magento_Checkout/js/discount-codes',
+            shoppingCart:           'Magento_Checkout/js/shopping-cart',
+            regionUpdater:          'Magento_Checkout/js/region-updater',
+            sidebar:                'Magento_Checkout/js/sidebar',
+            checkoutLoader:         'Magento_Checkout/js/checkout-loader',
+            checkoutData:           'Magento_Checkout/js/checkout-data',
+            proceedToCheckout:      'Magento_Checkout/js/proceed-to-checkout',
+            catalogAddToCart:       'Magento_Catalog/js/catalog-add-to-cart'
         }
     }
 };
@@ -734,8 +734,9 @@ var config = {
             'slick': 'Magento_PageBuilder/js/resource/slick/slick',
             'jarallax': 'Magento_PageBuilder/js/resource/jarallax/jarallax',
             'jarallaxVideo': 'Magento_PageBuilder/js/resource/jarallax/jarallax-video',
-            'vimeo': 'Magento_PageBuilder/js/resource/vimeo/player',
-            'vimeoWrapper': 'Magento_PageBuilder/js/resource/vimeo/vimeo-wrapper'
+            'Magento_PageBuilder/js/resource/vimeo/player': 'vimeo/player',
+            'Magento_PageBuilder/js/resource/vimeo/vimeo-wrapper': 'vimeo/vimeo-wrapper',
+            'jarallax-wrapper': 'Magento_PageBuilder/js/resource/jarallax/jarallax-wrapper'
         }
     },
     shim: {
@@ -743,10 +744,7 @@ var config = {
             deps: ['jquery']
         },
         'Magento_PageBuilder/js/resource/jarallax/jarallax-video': {
-            deps: ['jarallax', 'vimeoWrapper']
-        },
-        'Magento_PageBuilder/js/resource/vimeo/player': {
-            exports: ['Player']
+            deps: ['jarallax-wrapper', 'vimeoWrapper']
         }
     }
 };

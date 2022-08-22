@@ -1,0 +1,49 @@
+<?php
+$data = $block->getEditData();
+//print_r($data);
+?>
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Generic.Files.LineLength.TooLong
+
+/** @var \Magento\Customer\Block\Form\Login $block */
+?>
+<div class="block block-customer-login">
+    <div class="block-content" aria-labelledby="block-customer-login-heading">
+        <form class="form form-login"
+              action="<?= $this->getUrl("question/update/index") ?>.?id=<?= $data['entity_id'] ?>"
+              method="post"
+              id="login-form"
+              data-mage-init='{"validation":{}}'>
+            <fieldset class="fieldset login" data-hasrequired="<?= $block->escapeHtml(__('* Required Fields')) ?>">
+                <div class="field title required">
+                    <label class="label" for="email"><span><?= $block->escapeHtml(__('Title')) ?></span></label>
+                    <div class="control">
+                        <input name="title" value="<?= $data['title'] ?>" type="text"
+                               id="title" class="input-text"
+                               title="<?= $data['title'] ?>">
+                    </div>
+                </div>
+                <div class="field content required">
+                    <label class="label" for="email"><span><?= $block->escapeHtml(__('Content')) ?></span></label>
+                    <div class="control">
+                        <input name="content" value="<?= $data['title'] ?>"
+                               id="content" type="text" class="input-text"
+                               title="<?= $data['title'] ?>">
+                    </div>
+                </div>
+                <div class="actions-toolbar">
+                    <div class="primary">
+                        <button type="submit" class="action login primary" name="send" id="send2">
+                            <span><?= $block->escapeHtml(__('Save')) ?></span></button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+

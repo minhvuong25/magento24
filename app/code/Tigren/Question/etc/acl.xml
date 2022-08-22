@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <!--<resource id="Magento_Backend::content">-->
+                <resource id="Tigren_Question::question_head" title="Question" sortOrder="100">
+                    <resource id="Tigren_Question::question" title="Question" sortOrder="10">
+                        <!--<resource id="TIgren_Question::question_save" title="Save Question" sortOrder="10"/>-->
+                    </resource>
+                </resource>
+                <!--</resource>-->
+            </resource>
+        </resources>
+    </acl>
+</config>
