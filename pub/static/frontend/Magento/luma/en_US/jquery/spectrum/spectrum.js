@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento/lib/web/jquery/spectrum/spectrum.js
