@@ -5,20 +5,24 @@
  * @license   Open Software License ("OSL") v. 3.0
  */
 
-namespace Tigren\Question\Controller\Adminhtml\Question;
+namespace Tigren\GroupCatalogRule\Controller\Adminhtml\Customer;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
-use Magento\Backend\Model\View\Result\Page;
+use Magento\Framework\App\ResponseInterface;
+use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\View\Result\PageFactory;
 
+/**
+ * Class Index
+ * @package Tigren\GroupCatalogRule\Controller\Adminhtml\Customer
+ */
 class Index extends Action
 {
-
     /**
-     * @var PageFactory
+     * @var
      */
-    protected $resultPageFactory;
+    protected $resultFactory;
 
     /**
      * @param Context $context
@@ -34,16 +38,10 @@ class Index extends Action
     }
 
     /**
-     * Index action
-     *
-     * @return Page
+     * @return ResponseInterface|ResultInterface|void
      */
     public function execute()
     {
-      
-        /** @var Page $resultPage */
-        $resultPage = $this->resultPageFactory->create();
-        return $resultPage;
-
+        return $this->resultPageFactory->create();
     }
 }

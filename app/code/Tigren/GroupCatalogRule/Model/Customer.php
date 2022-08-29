@@ -5,21 +5,21 @@
  * @license   Open Software License ("OSL") v. 3.0
  */
 
-namespace Tigren\Question\Model;
+namespace Tigren\GroupCatalogRule\Model;
 
 use Magento\Framework\Model\AbstractModel;
 
 /**
- * Class Question
- * @package Tigren\Question\Model
+ * Class Customer
+ * @package Tigren\Customer\Model\Customer
  */
-class Question extends AbstractModel
+class Customer extends AbstractModel
 {
     /**
      * @return void
      */
     protected function _construct()
     {
-        $this->_init('Tigren\Question\Model\ResourceModel\Question');
+        $this->_init('Tigren\GroupCatalogRule\Model\ResourceModel\Customer');
     }
 }

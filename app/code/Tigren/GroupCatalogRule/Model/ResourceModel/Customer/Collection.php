@@ -5,14 +5,22 @@
  * @license   Open Software License ("OSL") v. 3.0
  */
 
-namespace Tigren\Question\Model\ResourceModel\Question;
+namespace Tigren\GroupCatalogRule\Model\ResourceModel\Customer;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
+/**
+ * Class collection
+ * @package Tigren\GroupCatalogRule\Model\ResourceModel\Customer
+ */
 class Collection extends AbstractCollection
 {
+    /**
+     * @return void
+     */
     protected function _construct()
     {
-        $this->_init('Tigren\Question\Model\Question', 'Tigren\Question\Model\ResourceModel\Question');
+        $collection = $this->collection->create();
+        $this->_init('Tigren\GroupCatalogRule\Model\Customer', 'Tigren\GroupCatalogRule\Model\ResourceModel\Customer');
     }
 }
