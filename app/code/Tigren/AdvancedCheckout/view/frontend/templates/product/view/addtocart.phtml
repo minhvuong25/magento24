@@ -1,0 +1,156 @@
+<?php
+/*
+ * @author    Tigren Solutions <info@tigren.com>
+ * @copyright Copyright (c) 2022 Tigren Solutions <https://www.tigren.com>. All rights reserved.
+ * @license   Open Software License ("OSL") v. 3.0
+ *
+ */
+
+/** @var $block View */
+
+use Magento\Catalog\Block\Product\View;
+
+?>
+<?php $_product = $block->getProduct(); ?>
+<?php $buttonTitle = __('Add to Cart'); ?>
+<?php if ($_product->isSaleable()) : ?>
+    <div class="box-tocart">
+        <div class="fieldset">
+            <?php if ($block->shouldRenderQuantity()) : ?>
+                <div class="field qty">
+                    <label class="label" for="qty"><span><?= $block->escapeHtml(__('Qty')) ?></span></label>
+                    <div class="control">
+                        <input type="number"
+                               name="qty"
+                               id="qty"
+                               min="0"
+                               value="<?= $block->getProductDefaultQty() * 1 ?>"
+                               title="<?= $block->escapeHtmlAttr(__('Qty')) ?>"
+                               class="input-text qty"
+                               data-validate="<?= $block->escapeHtml(json_encode($block->getQuantityValidators())) ?>"
+                        />
+                    </div>
+                </div>
+            <?php endif; ?>
+            <div class="actions">
+
+
+                <div data-mage-init='{"myjs": {}}'>
+                    <button type="submit"
+                            title="<?= $block->escapeHtmlAttr($buttonTitle) ?>"
+                            class="action primary tocart"
+                            id="product-addtocart-button" disabled>
+                        <span><?= $block->escapeHtml($buttonTitle) ?></span>
+                    </button>
+                </div>
+                <div id="popup-modal">
+
+                </div>
+
+                <?= $block->getChildHtml('', true) ?>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
+<script type="text/x-magento-init">
+    {
+        "#product_addtocart_form": {
+            "Magento_Catalog/js/validate-product": {}
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<script type="text/javascript">
+    require([
+        'jquery',
+        'mage/template',
+        'Magento_Ui/js/modal/modal',
+        'mage/url',
+        'mage/validation'
+    ], function ($, template, modal, urlBuilder) {
+
+
+        const options = {
+            type: 'popup',
+            responsive: true,
+            innerScroll: true,
+            title: "Advanced Checkout",
+            buttons: [
+                {
+                    text: $.mage.__('Proceed Add To Cart'),
+                    class: 'action primary tocart',
+                    click: function () {
+                        console.log('Do something here......');
+                    }
+                },
+                {
+                    text: $.mage.__('Clear'),
+                    class: 'action primary clearcart',
+                    click: function () {
+                        $.ajax({
+                            url: urlBuilder.build("tigren_advanced_checkout/cart/clearcarts"),
+                            method: "post",
+                            success: function (response) {
+                                if (response.success) {
+                                    $("#popup-modal").modal('closeModal');
+                                    $('[data-placeholder="message"]').html(response.message);
+                                }
+                                // if (response.minicart) {
+                                //     $("#popup-modal").modal('hide');
+                                //     $('[data-block="minicart"]').replaceWith(response.minicart);
+                                //     $('[data-block="minicart"]').trigger('contentUpdated');
+                                // }
+                            }
+                        })
+                    }
+                }
+            ]
+        };
+
+
+        var popup = modal(options, $("#popup-modal"));
+
+        $("#product-addtocart-button").on("click", function (e) {
+            //  e.preventDefault();
+            const productId = "<?= $_product->getId()?>";
+            const sku = "<?= $_product->getSku()?>";
+            $.ajax({
+                url: urlBuilder.build('tigren_advanced_checkout/ajax/index'),
+                data: {
+                    sku: sku,
+                    productId: productId,
+                },
+                type: 'post',
+                dataType: 'json',
+            }).done(function (response) {
+                if (!response.isShowPopup) {
+                    $('#popup-modal').modal('openModal');
+                }
+            }).fail(function (error) {
+                console.log(JSON.stringify(error));
+            });
+        });
+
+    });
+</script>
+<script>
+    debugger;
+    require([
+        'Magento_Customer/js/customer-data'
+    ], function (customerData) {
+        var sections = ['cart'];
+        customerData.invalidate(sections);
+        customerData.reload(sections, true);
+    });
+
+</script>

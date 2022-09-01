@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-inventory-swatches-frontend-ui/view/frontend/web/js/swatch-renderer.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-inventory-swatches-frontend-ui/view/frontend/web/js/swatch-renderer.js

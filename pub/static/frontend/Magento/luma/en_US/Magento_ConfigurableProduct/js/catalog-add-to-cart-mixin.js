@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-configurable-product/view/frontend/web/js/catalog-add-to-cart-mixin.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-configurable-product/view/frontend/web/js/catalog-add-to-cart-mixin.js

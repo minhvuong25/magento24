@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-catalog/view/base/web/js/price-utils.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-catalog/view/base/web/js/price-utils.js

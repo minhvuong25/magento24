@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-captcha/view/frontend/web/js/view/checkout/loginCaptcha.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-captcha/view/frontend/web/js/view/checkout/loginCaptcha.js

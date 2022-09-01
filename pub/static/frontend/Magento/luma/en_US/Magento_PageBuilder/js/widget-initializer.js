@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-page-builder/view/base/web/js/widget-initializer.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-page-builder/view/base/web/js/widget-initializer.js

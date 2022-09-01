@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-configurable-product/view/frontend/web/js/product/view/product-info-resolver.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-configurable-product/view/frontend/web/js/product/view/product-info-resolver.js

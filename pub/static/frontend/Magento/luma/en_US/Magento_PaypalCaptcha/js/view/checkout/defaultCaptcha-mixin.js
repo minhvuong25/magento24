@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-paypal-captcha/view/frontend/web/js/view/checkout/defaultCaptcha-mixin.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-paypal-captcha/view/frontend/web/js/view/checkout/defaultCaptcha-mixin.js

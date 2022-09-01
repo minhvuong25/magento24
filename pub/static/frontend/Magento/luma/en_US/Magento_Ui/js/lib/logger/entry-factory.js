@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-ui/view/base/web/js/lib/logger/entry-factory.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-ui/view/base/web/js/lib/logger/entry-factory.js

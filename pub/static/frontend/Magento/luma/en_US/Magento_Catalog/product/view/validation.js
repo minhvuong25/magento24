@@ -1,1 +1,1 @@
-/home/minhvuong/Work/htdocs/magento/vendor/magento/module-catalog/view/frontend/web/product/view/validation.js
+/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-catalog/view/frontend/web/product/view/validation.js
