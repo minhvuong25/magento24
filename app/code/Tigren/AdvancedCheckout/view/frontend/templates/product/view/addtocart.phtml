@@ -68,6 +68,23 @@ use Magento\Catalog\Block\Product\View;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
 <script type="text/javascript">
@@ -90,7 +107,25 @@ use Magento\Catalog\Block\Product\View;
                     text: $.mage.__('Proceed Add To Cart'),
                     class: 'action primary tocart',
                     click: function () {
-                        console.log('Do something here......');
+                        const productId = <?= $_product->getId()?>;
+                        const sku = "<?= $_product->getSku()?>";
+                        const qty = "<?= $_product->getQty()?>";
+
+                        $.ajax({
+                            url: urlBuilder.build("tigren_advanced_checkout/cart/addtocart"),
+                            method: "post",
+                            data: {
+                                sku: sku,
+                                qty: qty,
+                                productId: productId
+                            },
+                            success: function (response) {
+                                if (response.success) {
+                                    $("#popup-modal").modal('closeModal');
+                                    $('[data-placeholder="message"]').html(response.message);
+                                }
+                            }
+                        })
                     }
                 },
                 {
@@ -105,11 +140,7 @@ use Magento\Catalog\Block\Product\View;
                                     $("#popup-modal").modal('closeModal');
                                     $('[data-placeholder="message"]').html(response.message);
                                 }
-                                // if (response.minicart) {
-                                //     $("#popup-modal").modal('hide');
-                                //     $('[data-block="minicart"]').replaceWith(response.minicart);
-                                //     $('[data-block="minicart"]').trigger('contentUpdated');
-                                // }
+
                             }
                         })
                     }
@@ -121,14 +152,16 @@ use Magento\Catalog\Block\Product\View;
         var popup = modal(options, $("#popup-modal"));
 
         $("#product-addtocart-button").on("click", function (e) {
-            //  e.preventDefault();
+            e.preventDefault();
             const productId = "<?= $_product->getId()?>";
             const sku = "<?= $_product->getSku()?>";
+            const qty = "<?= $_product->getQty()?>";
             $.ajax({
                 url: urlBuilder.build('tigren_advanced_checkout/ajax/index'),
                 data: {
                     sku: sku,
                     productId: productId,
+                    qty: qty,
                 },
                 type: 'post',
                 dataType: 'json',
@@ -142,15 +175,15 @@ use Magento\Catalog\Block\Product\View;
         });
 
     });
+
 </script>
 <script>
-    debugger;
     require([
         'Magento_Customer/js/customer-data'
     ], function (customerData) {
         var sections = ['cart'];
         customerData.invalidate(sections);
-        customerData.reload(sections, true);
     });
-
+    debugger;
 </script>
+
