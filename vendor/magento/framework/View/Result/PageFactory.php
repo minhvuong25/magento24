@@ -42,7 +42,7 @@ class PageFactory
 
     /**
      * Create new page regarding its type
-     *l
+     *
      * TODO: As argument has to be controller action interface, temporary solution until controller output models
      * TODO: are not implemented
      *

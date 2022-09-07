@@ -9,9 +9,8 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <update handle="editor"/>
     <body>
-        <referenceContainer name="create">
-            <block class="Tigren\Quesiton\Block\Adminhtml\Edit\Edit" name="tigren_question_edit"/>
-            <!--            <uiComponent name="tigren_question_create"/>-->
+        <referenceContainer name="content">
+            <uiComponent name="tigren_question_create"/>
         </referenceContainer>
     </body>
 </page>

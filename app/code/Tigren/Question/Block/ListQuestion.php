@@ -16,8 +16,8 @@ class ListQuestion extends Template
     public function __construct(
         Context           $context,
         CollectionFactory $collectionFactory,
-        array             $data = [],
-        Session           $customerSession)
+        Session           $customerSession,
+        array             $data = [])
     {
         $this->customerSession = $customerSession;
         $this->collection = $collectionFactory;
@@ -27,7 +27,6 @@ class ListQuestion extends Template
 
     public function getCollection()
     {
-
         $author = '';
         if ($this->customerSession->isLoggedIn()) {
             $author = $this->customerSession->getCustomerId();

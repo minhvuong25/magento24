@@ -6,13 +6,17 @@
 
 namespace Tigren\Question\Ui\Component\Listing\Column;
 
+
 use Magento\Framework\UrlInterface;
 use Magento\Framework\View\Element\UiComponent\ContextInterface;
 use Magento\Framework\View\Element\UiComponentFactory;
 use Magento\Ui\Component\Listing\Columns\Column;
 
 /**
- * Class DepartmentActions
+ * Class ProductActions
+ *
+ * @api
+ * @since 100.0.2
  */
 class QuestionActions extends Column
 {
@@ -36,7 +40,6 @@ class QuestionActions extends Column
         array              $data = []
     )
     {
-
         $this->urlBuilder = $urlBuilder;
         parent::__construct($context, $uiComponentFactory, $components, $data);
     }
@@ -50,23 +53,25 @@ class QuestionActions extends Column
     public function prepareDataSource(array $dataSource)
     {
         if (isset($dataSource['data']['items'])) {
+            $storeId = $this->context->getFilterParam('store_id');
+
             foreach ($dataSource['data']['items'] as &$item) {
                 $item[$this->getData('name')]['edit'] = [
                     'href' => $this->urlBuilder->getUrl(
                         'tigren_question/question/edit',
-                        ['id' => $item['entity_id']]
+                        ['id' => $item['entity_id'], 'store' => $storeId]
                     ),
                     'label' => __('Edit'),
                     'hidden' => false,
                 ];
-                $item[$this->getData('name')]['delete'] = [
-                    'href' => $this->urlBuilder->getUrl(
-                        'tigren_question/question/delete',
-                        ['id' => $item['entity_id']]
-                    ),
-                    'label' => __('Delete'),
-                    'hidden' => false,
-                ];
+//                $item[$this->getData('name')]['delete'] = [
+//                    'href' => $this->urlBuilder->getUrl(
+//                        'question/create/delete',
+//                        ['id' => $item['entity_id'], 'store' => $storeId]
+//                    ),
+//                    'label' => __('Delete'),
+//                    'hidden' => false,
+//                ];
             }
         }
 

@@ -9,21 +9,21 @@
     <argument name="data" xsi:type="array">
         <item name="js_config" xsi:type="array">
             <item name="provider" xsi:type="string">
-                tigren_question_creating.tigren_question_creating_data_source
+                tigren_question_create.tigren_question_create_data_source
             </item>
-            <item name="deps" xsi:type="string">tigren_question_creating.tigren_question_creating_data_source</item>
+            <item name="deps" xsi:type="string">tigren_question_create.tigren_question_create_data_source</item>
         </item>
         <item name="label" xsi:type="string" translate="true">The Edit Form</item>
         <item name="config" xsi:type="array">
             <item name="dataScope" xsi:type="string">data</item>
-            <item name="namespace" xsi:type="string">tigren_question_creating</item>
+            <item name="namespace" xsi:type="string">tigren_question_create</item>
         </item>
         <item name="template" xsi:type="string">templates/form/collapsible</item>
     </argument>
     <settings>
         <buttons>
             <button name="back">
-                <url path="question/create/index"/>
+                <url path="tigren_question/question/index"/>
                 <class>back</class>
                 <label translate="true">Back</label>
             </button>
@@ -33,16 +33,16 @@
                 <label translate="true">Save</label>
             </button>
         </buttons>
-        <namespace>tigren_question_creating</namespace>
+        <namespace>tigren_question_create</namespace>
         <dataScope>data</dataScope>
         <deps>
-            <dep>tigren_question_creating.tigren_question_creating_data_source</dep>
+            <dep>tigren_question_create.tigren_question_create_data_source</dep>
         </deps>
     </settings>
-    <dataSource name="tigren_question_creating_data_source">
+    <dataSource name="tigren_question_create_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
             <argument name="class" xsi:type="string">Tigren\Question\Model\DataProvider</argument>
-            <argument name="name" xsi:type="string">tigren_question_creating_data_source</argument>
+            <argument name="name" xsi:type="string">tigren_question_create_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">entity_id</argument>
             <argument name="requestFieldName" xsi:type="string">id</argument>
         </argument>
@@ -52,8 +52,8 @@
             </item>
         </argument>
         <settings>
-            <validateUrl path="question/create/index"/>
-            <submitUrl path="question/create/save"/>
+            <validateUrl path="tigren_question/question/index"/>
+            <submitUrl path="tigren_question/question/save"/>
         </settings>
     </dataSource>
     <fieldset name="tigren_customer_question">

@@ -160,6 +160,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionConnectParticipant(array $args = [])
  * @method \Aws\ConnectWisdomService\ConnectWisdomServiceClient createConnectWisdomService(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionConnectWisdomService(array $args = [])
+ * @method \Aws\ControlTower\ControlTowerClient createControlTower(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionControlTower(array $args = [])
  * @method \Aws\CostExplorer\CostExplorerClient createCostExplorer(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionCostExplorer(array $args = [])
  * @method \Aws\CostandUsageReportService\CostandUsageReportServiceClient createCostandUsageReportService(array $args = [])
@@ -574,6 +576,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionSts(array $args = [])
  * @method \Aws\Support\SupportClient createSupport(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionSupport(array $args = [])
+ * @method \Aws\SupportApp\SupportAppClient createSupportApp(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionSupportApp(array $args = [])
  * @method \Aws\Swf\SwfClient createSwf(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionSwf(array $args = [])
  * @method \Aws\Synthetics\SyntheticsClient createSynthetics(array $args = [])
@@ -631,7 +635,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.233.2';
+    const VERSION = '3.235.1';
 
     /** @var array Arguments for creating clients */
     private $args;
