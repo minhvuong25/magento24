@@ -26,7 +26,9 @@
     </argument>
     <dataSource name="tigren_customer_listing_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
-            <argument name="class" xsi:type="string">Tigren\GroupCatalogRule\Ui\DataProvider\Customer\Listing</argument>
+            <argument name="class" xsi:type="string">
+                Tigren\GroupCatalogRule\Ui\DataProvider\Customer\Listing
+            </argument>
             <argument name="name" xsi:type="string">tigren_customer_listing_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">rule_id</argument>
             <argument name="requestFieldName" xsi:type="string">id</argument>
@@ -72,7 +74,7 @@
                     <item name="config" xsi:type="array">
                         <item name="type" xsi:type="string">delete</item>
                         <item name="label" xsi:type="string" translate="true">Delete</item>
-                        <item name="url" xsi:type="url" path="tigren_groupcatalogrule/customer/delete"/>
+                        <item name="url" xsi:type="url" path="tigren_groupcatalogrule/customer/massdelete"/>
                         <item name="confirm" xsi:type="array">
                             <item name="title" xsi:type="string" translate="true">Delete Rule</item>
                             <item name="message" xsi:type="string" translate="true">Are you sure you want to delete
@@ -82,6 +84,7 @@
                     </item>
                 </argument>
             </action>
+
         </massaction>
     </listingToolbar>
     <columns name="tigren_customer_listing_columns">
@@ -158,10 +161,6 @@
                         <item name="edit" xsi:type="array">
                             <item name="itemLabel" xsi:type="string" translate="true">Edit</item>
                             <item name="urlPath" xsi:type="string">tigren_groupcatalogrule/customer/edit</item>
-                        </item>
-                        <item name="delete" xsi:type="array">
-                            <item name="itemLabel" xsi:type="string" translate="true">Delete</item>
-                            <item name="urlPath" xsi:type="string">tigren_groupcatalogrule/customer/massdelete</item>
                         </item>
                     </item>
 

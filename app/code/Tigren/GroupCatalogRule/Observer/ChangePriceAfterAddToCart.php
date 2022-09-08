@@ -66,7 +66,6 @@ class ChangePriceAfterAddToCart implements ObserverInterface
             $sku = $product->getSku();
             $customerGroupId = $this->getGroupId();
             $ruleCollection = $this->collectionFactory->create();
-
             $ruleCollection->addFieldToFilter('products', ['like' => '%' . $sku . '%'])
                 ->addFieldToFilter('customer_group_id', ['like' => '%' . $customerGroupId . '%'])
                 ->setOrder('priority', 'DESC');

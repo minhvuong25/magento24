@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-wishlist/view/frontend/web/js/view/wishlist.js

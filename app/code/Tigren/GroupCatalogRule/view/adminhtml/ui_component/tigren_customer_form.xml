@@ -43,7 +43,10 @@
     </settings>
     <dataSource name="tigren_customer_form_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
-            <argument name="class" xsi:type="string">Tigren\GroupCatalogRule\Model\DataProvider</argument>
+            <argument name="class" xsi:type="string">
+                Tigren\GroupCatalogRule\Model\DataProvider
+                <!--                Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider-->
+            </argument>
             <argument name="name" xsi:type="string">tigren_customer_form_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">rule_id</argument>
             <argument name="requestFieldName" xsi:type="string">id</argument>
