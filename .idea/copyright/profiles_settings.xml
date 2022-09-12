@@ -1,7 +1,7 @@
 <component name="CopyrightManager">
-  <settings default="TIGREN">
+  <settings>
     <module2copyright>
-      <element module="All" copyright="TIGREN" />
+      <element module="All" copyright="Tigren" />
     </module2copyright>
   </settings>
 </component>

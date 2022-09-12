@@ -82,6 +82,5 @@ class ChangePriceAfterAddToCart implements ObserverInterface
         } catch (\Exception $e) {
 
         }
-
     }
 }

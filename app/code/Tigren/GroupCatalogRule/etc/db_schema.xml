@@ -12,9 +12,9 @@
         <column xsi:type="int" name="rule_id" padding="10" unsigned="true" nullable="false" identity="true"
                 comment="Rule Id"/>
         <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Name"/>
-        <column xsi:type="smallint" name="customer_group_id" padding="5" unsigned="true" nullable="false"
-                identity="false" default="0" comment="Customer Group Id"/>
-        <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false"
+        <column xsi:type="varchar" name="customer_group_id" length="255" nullable="false"
+                comment="Customer Group Id"/>
+        <column xsi:type="varchar" name="store_id" length="255" nullable="false"
                 comment="Store Id"/>
         <column xsi:type="text" name="products" nullable="false" comment="Products"/>
         <column xsi:type="text" name="discount_amount" nullable="false" comment="Discount Amount"/>

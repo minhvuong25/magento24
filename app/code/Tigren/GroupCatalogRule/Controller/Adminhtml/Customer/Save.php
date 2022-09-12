@@ -5,15 +5,22 @@ namespace Tigren\GroupCatalogRule\Controller\Adminhtml\Customer;
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Tigren\GroupCatalogRule\Model\CustomerFactory;
+use Magento\Framework\Serialize\SerializerInterface;
 
 class Save extends Action
 {
+
+    protected $serializer;
+
     public function __construct(
-        CustomerFactory $customerFactory,
-        Context         $context)
+        CustomerFactory     $customerFactory,
+        Context             $context,
+        SerializerInterface $serializer,
+    )
     {
         parent::__construct($context);
         $this->customerFactory = $customerFactory;
+        $this->serializer = $serializer;
     }
 
     public function execute()
@@ -28,7 +35,9 @@ class Save extends Action
         $from_date = $rule['from_date'];
         $to_date = $rule['to_date'];
         $store_id = $rule['store_id'];
-        $customer_group_ids = $rule['customer_group_ids'][0];
+        $data_store_id = implode(",", $store_id);
+        $customer_group_ids = $rule['customer_group_ids'];
+        $data = implode(",", $customer_group_ids);
         $form_key = $rule['form_key'];
         $rule = $this->customerFactory->create();
         $arr = [
@@ -39,8 +48,8 @@ class Save extends Action
             'is_active' => $is_active,
             'from_date' => $from_date,
             'to_date' => $to_date,
-            'store_id' => $store_id,
-            'customer_group_ids' => $customer_group_ids,
+            'store_id' => $data_store_id,
+            'customer_group_id' => $data,
             'form_key' => $form_key,
         ];
         if (isset($id)) {
