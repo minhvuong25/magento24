@@ -23,7 +23,7 @@
              resource="Tigren_GroupCatalogRule::product"/>
         <add id="Tigren_GroupCatalogRule::manager_product" title="Manage Products" module="Tigren_GroupCatalogRule"
              sortOrder="10"
-             action="Tigren_GroupCatalogRule/post" resource="Tigren_GroupCatalogRule::manager_product"
+             action="tigren_groupcatalogrule/customer/product" resource="Tigren_GroupCatalogRule::manager_product"
              parent="Tigren_GroupCatalogRule::product"/>
 
     </menu>
