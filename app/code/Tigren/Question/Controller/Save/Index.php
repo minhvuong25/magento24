@@ -8,6 +8,7 @@
 namespace Tigren\Question\Controller\Save;
 
 use Exception;
+use Magento\Customer\Model\Session;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\App\ResponseInterface;
@@ -39,10 +40,10 @@ class Index extends Action
      * @param QuestionFactory $questionFactory
      */
     public function __construct(
-        Context                         $context,
-        PageFactory                     $pageFactory,
-        QuestionFactory                 $questionFactory,
-        \Magento\Customer\Model\Session $customerSession,
+        Context         $context,
+        PageFactory     $pageFactory,
+        QuestionFactory $questionFactory,
+        Session         $customerSession,
     )
     {
         $this->_pageFactory = $pageFactory;
@@ -67,7 +68,7 @@ class Index extends Action
             if (!empty($newData)) {
                 $model = $this->_questionFactory->create();
                 $model->setData($newData)->save();
-                $this->messageManager->addSuccessMessage(__("Data Saved Successfully."));
+                $this->messageManager->addSuccessMessage(__("Data Created Successfully."));
             }
         } catch (Exception $e) {
             $this->messageManager->addErrorMessage($e, __("We can\'t submit your request, Please try again."));

@@ -51,6 +51,7 @@ class Index extends Action
     public function execute()
     {
         if ($this->customerSession->isLoggedIn()) {
+
             return $this->resultPageFactory->create();
 
         } else {
