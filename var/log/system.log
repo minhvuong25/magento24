@@ -5337,3 +5337,5 @@ Stack trace:
 [2022-09-15T09:32:44.777764+00:00] main.INFO: Broken reference: the 'skip_gallery_after' tries to reorder itself towards 'product.info.media.image', but their parents are different: 'skip_gallery_after.wrapper' and 'product.info.media' respectively. [] []
 [2022-09-15T09:32:45.809562+00:00] main.ERROR: Unable to resolve the source file for 'frontend/Magento/luma/en_US/myjs.js' [] []
 [2022-09-15T09:32:45.809915+00:00] main.CRITICAL: Unable to resolve the source file for 'frontend/Magento/luma/en_US/myjs.js' [] []
+[2022-09-15T09:37:52.157285+00:00] main.ERROR: Unable to resolve the source file for 'frontend/Magento/luma/en_US/myjs.js' [] []
+[2022-09-15T09:37:52.158164+00:00] main.CRITICAL: Unable to resolve the source file for 'frontend/Magento/luma/en_US/myjs.js' [] []
