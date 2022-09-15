@@ -1,14 +1,30 @@
 <?php
+/*
+ * @author    Tigren Solutions <info@tigren.com>
+ * @copyright Copyright (c) 2022 Tigren Solutions <https://www.tigren.com>. All rights reserved.
+ * @license   Open Software License ("OSL") v. 3.0
+ */
 
 namespace Tigren\Question\Controller\Adminhtml\Question;
 
+use Exception;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
+use Magento\Framework\App\ResponseInterface;
+use Magento\Framework\Controller\ResultInterface;
 use Tigren\Question\Model\QuestionFactory;
 use function PHPUnit\Framework\isEmpty;
 
+/**
+ * Class Save
+ * @package Tigren\Question\Controller\Adminhtml\Question
+ */
 class Save extends Action
 {
+    /**
+     * @param Context $context
+     * @param QuestionFactory $questionFactory
+     */
     public function __construct(
         Context         $context,
         QuestionFactory $questionFactory
@@ -18,10 +34,12 @@ class Save extends Action
         $this->_questionFactory = $questionFactory;
     }
 
+    /**
+     * @return ResponseInterface|ResultInterface
+     * @throws Exception
+     */
     public function execute()
     {
-//        $param = $this->getRequest()->getParams()['entity_id'];
-//        $id = $param['entity_id'];
         $title = $this->getRequest()->getParam('title');
         $content = $this->getRequest()->getParam('content');
         $arr = [

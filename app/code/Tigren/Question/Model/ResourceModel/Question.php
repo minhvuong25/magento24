@@ -9,17 +9,28 @@ namespace Tigren\Question\Model\ResourceModel;
 
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
+use Magento\Framework\Model\ResourceModel\Db\Context;
 
+/**
+ * Class Question
+ * @package Tigren\Question\Model\ResourceModel
+ */
 class Question extends AbstractDb
 {
 
+    /**
+     * @param Context $context
+     */
     public function __construct(
-        \Magento\Framework\Model\ResourceModel\Db\Context $context
+        Context $context
     )
     {
         parent::__construct($context);
     }
 
+    /**
+     * @return void
+     */
     protected function _construct()
     {
         $this->_init('tigren_customer_question', 'entity_id');

@@ -8,13 +8,23 @@
 namespace Tigren\Question\Controller\Adminhtml\Question;
 
 use Magento\Backend\App\Action;
+use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\ResultFactory;
+use Magento\Framework\Controller\ResultInterface;
+use Magento\Framework\View\Result\Page;
 
 
+/**
+ * Class Edit
+ * @package Tigren\Question\Controller\Adminhtml\Question
+ */
 class Edit extends Action
 {
 
 
+    /**
+     * @return ResponseInterface|ResultInterface|Page|Page&ResultInterface
+     */
     public function execute()
     {
         $resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);

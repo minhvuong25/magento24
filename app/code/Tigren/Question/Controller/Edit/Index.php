@@ -7,17 +7,45 @@
 
 namespace Tigren\Question\Controller\Edit;
 
-class Index extends \Magento\Framework\App\Action\Action
+use Magento\Framework\App\Action\Action;
+use Magento\Framework\App\Action\Context;
+use Magento\Framework\App\Request\Http;
+use Magento\Framework\App\ResponseInterface;
+use Magento\Framework\Controller\ResultInterface;
+use Magento\Framework\Registry;
+use Magento\Framework\View\Result\Page;
+use Magento\Framework\View\Result\PageFactory;
+
+/**
+ * Class Index
+ * @package Tigren\Question\Controller\Edit
+ */
+class Index extends Action
 {
+    /**
+     * @var PageFactory
+     */
     protected $_pageFactory;
+    /**
+     * @var Http
+     */
     protected $_request;
+    /**
+     * @var Registry
+     */
     protected $_coreRegistry;
 
+    /**
+     * @param Context $context
+     * @param PageFactory $pageFactory
+     * @param Http $request
+     * @param Registry $coreRegistry
+     */
     public function __construct(
-        \Magento\Framework\App\Action\Context      $context,
-        \Magento\Framework\View\Result\PageFactory $pageFactory,
-        \Magento\Framework\App\Request\Http        $request,
-        \Magento\Framework\Registry                $coreRegistry
+        Context     $context,
+        PageFactory $pageFactory,
+        Http        $request,
+        Registry    $coreRegistry
     )
     {
         $this->_pageFactory = $pageFactory;
@@ -26,6 +54,9 @@ class Index extends \Magento\Framework\App\Action\Action
         return parent::__construct($context);
     }
 
+    /**
+     * @return ResponseInterface|ResultInterface|Page
+     */
     public function execute()
     {
         $id = $this->_request->getParam('id');

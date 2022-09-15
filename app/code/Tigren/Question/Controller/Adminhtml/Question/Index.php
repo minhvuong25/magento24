@@ -12,6 +12,10 @@ use Magento\Backend\App\Action\Context;
 use Magento\Backend\Model\View\Result\Page;
 use Magento\Framework\View\Result\PageFactory;
 
+/**
+ * Class Index
+ * @package Tigren\Question\Controller\Adminhtml\Question
+ */
 class Index extends Action
 {
 
@@ -40,7 +44,7 @@ class Index extends Action
      */
     public function execute()
     {
-      
+
         /** @var Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
         return $resultPage;

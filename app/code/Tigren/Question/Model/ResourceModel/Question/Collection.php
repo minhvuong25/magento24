@@ -9,8 +9,15 @@ namespace Tigren\Question\Model\ResourceModel\Question;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
+/**
+ * Class Collection
+ * @package Tigren\Question\Model\ResourceModel\Question
+ */
 class Collection extends AbstractCollection
 {
+    /**
+     * @return void
+     */
     protected function _construct()
     {
         $this->_init('Tigren\Question\Model\Question', 'Tigren\Question\Model\ResourceModel\Question');

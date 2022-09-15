@@ -7,26 +7,33 @@
 
 namespace Tigren\Quesiton\Block\Adminhtml\Edit;
 
+use Magento\Backend\Block\Widget\Context;
 use Magento\Backend\Block\Widget\Form\Container;
+use Magento\Framework\Phrase;
+use Magento\Framework\Registry;
 
+/**
+ * Class Edit
+ * @package Tigren\Quesiton\Block\Adminhtml\Edit
+ */
 class Edit extends Container
 {
     /**
      * Core registry
      *
-     * @var \Magento\Framework\Registry
+     * @var Registry
      */
     protected $_coreRegistry = null;
 
     /**
-     * @param \Magento\Backend\Block\Widget\Context $context
-     * @param \Magento\Framework\Registry $registry
+     * @param Context $context
+     * @param Registry $registry
      * @param array $data
      */
     public function __construct(
-        \Magento\Backend\Block\Widget\Context $context,
-        \Magento\Framework\Registry           $registry,
-        array                                 $data = []
+        Context  $context,
+        Registry $registry,
+        array    $data = []
     )
     {
         die("aa");
@@ -71,7 +78,7 @@ class Edit extends Container
     /**
      * Get header with Department name
      *
-     * @return \Magento\Framework\Phrase
+     * @return Phrase
      */
     public function getHeaderText()
     {
