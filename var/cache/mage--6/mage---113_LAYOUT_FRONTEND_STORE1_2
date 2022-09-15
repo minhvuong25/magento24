@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1660296621;s:6:"expire";i:1691832621;s:4:"tags";s:37:"113_LAYOUT_GENERAL_CACHE_TAG,113_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1663223769;s:6:"expire";i:1694759769;s:4:"tags";s:37:"113_LAYOUT_GENERAL_CACHE_TAG,113_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6873,6 +6873,17 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1660296621;s:6:"expire";i:1691832621;s:4:"t
 </handle><handle id="wishlist_shared_index" layout="1column"><body>
    <referenceContainer name="content">
       <block class="Magento\Wishlist\Block\Share\Wishlist" name="customer.wishlist" template="Magento_Wishlist::shared.phtml" cacheable="false"/>
+   </referenceContainer>
+</body>
+</handle><handle id="customer_account" layout="2columns-left"><body>
+   <referenceBlock class="Amasty\GroupAssign\Block\Customer\AccountLink" name="customer-account-navigation-account-link"/>
+</body>
+</handle><handle id="default"><head>
+   <css src="Amasty_Groupcat::js/fancybox/jquery.fancybox.css"/>
+</head>
+<body>
+   <referenceContainer name="content">
+      <block after="-" name="Amasty_Grpoupcat_Form" class="Amasty\Groupcat\Block\Form" template="Amasty_Groupcat::form.phtml"/>
    </referenceContainer>
 </body>
 </handle><handle id="braintree_googlepay_review" layout="1column"><head>

@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-cookie/view/frontend/web/js/require-cookie.js

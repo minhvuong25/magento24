@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-product-video/view/frontend/web/js/fotorama-add-video-events.js

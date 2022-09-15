@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento24/vendor/magento/module-backend/view/adminhtml/web/js/bootstrap/editor.js

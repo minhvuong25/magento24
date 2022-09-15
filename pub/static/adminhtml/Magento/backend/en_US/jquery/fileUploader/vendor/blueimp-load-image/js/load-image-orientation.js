@@ -1,1 +1,0 @@
-/home/minhvuong/Work/htdocs/magento24/lib/web/jquery/fileUploader/vendor/blueimp-load-image/js/load-image-orientation.js

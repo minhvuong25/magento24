@@ -16,4 +16,15 @@ interface GroupExtensionInterface extends \Magento\Framework\Api\ExtensionAttrib
      * @return $this
      */
     public function setExcludeWebsiteIds($excludeWebsiteIds);
+
+    /**
+     * @return bool|null
+     */
+    public function getIsVisibleOnStorefront();
+
+    /**
+     * @param bool $isVisibleOnStorefront
+     * @return $this
+     */
+    public function setIsVisibleOnStorefront($isVisibleOnStorefront);
 }
