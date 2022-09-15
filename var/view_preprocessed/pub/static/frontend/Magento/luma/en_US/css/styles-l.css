@@ -63,6 +63,14 @@
 .form.send.friend .g-recaptcha {
   margin-top: 40px;
 }
+@keyframes loading {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(359.9deg);
+  }
+}
 /**
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
@@ -3633,6 +3641,14 @@
   }
 }
 @media all and (min-width: 1024px), print {
+  .amgroupassign-groupcode {
+    max-width: 105px;
+    margin: 0 16px 0 0;
+  }
+  .amgroupassign-li-nav {
+    align-items: center;
+    flex-direction: row;
+  }
   .products-grid .product-item {
     width: 20%;
   }
