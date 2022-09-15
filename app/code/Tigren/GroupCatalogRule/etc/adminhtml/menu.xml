@@ -16,4 +16,15 @@
              parent="Tigren_GroupCatalogRule::rule" action="tigren_groupcatalogrule/customer/index"
              resource="Tigren_GroupCatalogRule::manager_rule"/>
     </menu>
+    <!--            product with rule-->
+    <menu>
+        <add id="Tigren_GroupCatalogRule::product" title="Product with rule" module="Tigren_GroupCatalogRule"
+             sortOrder="51"
+             resource="Tigren_GroupCatalogRule::product"/>
+        <add id="Tigren_GroupCatalogRule::manager_product" title="Manage Products" module="Tigren_GroupCatalogRule"
+             sortOrder="10"
+             action="Tigren_GroupCatalogRule/post" resource="Tigren_GroupCatalogRule::manager_product"
+             parent="Tigren_GroupCatalogRule::product"/>
+
+    </menu>
 </config>

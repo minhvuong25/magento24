@@ -1,7 +1,7 @@
 <?php
-
+$sku = $block->getSaleableItem()->getSku();
 $helper = $this->helper('Tigren\GroupCatalogRule\Helper\Data');
-$value = $helper->show_discount();
+$value = $helper->show_discount($sku);
 
 $priceModel = $block->getPriceType('regular_price');
 $finalPriceModel = $block->getPriceType('final_price');
@@ -19,11 +19,13 @@ $schema = ($block->getZone() == 'item_view') ? true : false;
         ]);
         ?>
     </span>
+
+
     <span>
 	<?php
     $item = $block->getSaleableItem();
     $_savePercent = 100 - round(((float)$item->getFinalPrice() / (float)$item->getPrice()) * 100);
-    echo '<b style="color:#008000">' . $_savePercent . '% off </b>';
+    echo '<b style="color:#008000">' . $value . '% off </b>';
     ?>
     </span>
     <span class="old-price">

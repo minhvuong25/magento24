@@ -34,8 +34,8 @@
         <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false"
                 comment="Entity Id"/>
         <column xsi:type="int" name="order_id" nullable="false" padding="10" comment="Order ID"/>
-        <column xsi:type="int" name="customere_id" padding="5" unsigned="true" nullable="false"
-                default="0" comment="Customer  Id"/>
+        <column xsi:type="int" name="customer_id" padding="5" unsigned="true" nullable="false"
+                default="0" comment="Customer Id"/>
         <column xsi:type="int" name="rule_id" nullable="false" comment="Rule ID"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="rule_id"/>

@@ -56,6 +56,11 @@ class ParamOverriderCartId implements ParamOverriderInterface
                 }
             }
         } catch (NoSuchEntityException $e) {
+            $writer = new \Zend_Log_Writer_Stream(BP . '/var/log/custom.log');
+            $logger = new \Zend_Log();
+            $logger->addWriter($writer);
+            $logger->info(print_r( $e->getMessage(), true));
+//             $e->getMessage();
             throw new NoSuchEntityException(__('Current customer does not have an active cart.'));
         }
         return null;

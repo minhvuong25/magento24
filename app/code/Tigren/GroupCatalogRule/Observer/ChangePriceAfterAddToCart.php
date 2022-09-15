@@ -12,6 +12,7 @@ use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
 use Tigren\GroupCatalogRule\Model\ResourceModel\Customer\CollectionFactory;
 
+
 /**
  * Class ChangePriceAfterAddToCart
  * @package Tigren\GroupCatalogRule\Observer
@@ -33,13 +34,17 @@ class ChangePriceAfterAddToCart implements ObserverInterface
      * @param CollectionFactory $collectionFactory
      */
 
+    protected $checkoutsession;
+
     public function __construct(
-        Session           $customerSession,
-        CollectionFactory $collectionFactory
+        Session                         $customerSession,
+        CollectionFactory               $collectionFactory,
+        \Magento\Checkout\Model\Session $checkoutsession,
     )
     {
         $this->_customerSession = $customerSession;
         $this->collectionFactory = $collectionFactory;
+        $this->checkoutsession = $checkoutsession;
     }
 
     /**
@@ -68,9 +73,16 @@ class ChangePriceAfterAddToCart implements ObserverInterface
             $ruleCollection = $this->collectionFactory->create();
             $ruleCollection->addFieldToFilter('products', ['like' => '%' . $sku . '%'])
                 ->addFieldToFilter('customer_group_id', ['like' => '%' . $customerGroupId . '%'])
-                ->setOrder('priority', 'DESC');
+                ->setOrder('priority', 'ASC');
+
             $rule = $ruleCollection->setPageSize(1)->getFirstItem();
             $discount = $rule->getDiscountAmount();
+            if (!empty($rule)) {
+                $this->checkoutsession->setData('rule_id_product', $rule->getRuleId());
+            } else {
+                $this->checkoutsession->setData('rule_id_product', '');
+            }
+
 
             $priceAfterDiscount = $product->getPrice() * (100 - $discount) / 100;
             $quoteItem->setCustomPrice($priceAfterDiscount);

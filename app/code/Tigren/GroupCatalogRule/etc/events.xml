@@ -11,4 +11,10 @@
         <observer name="tigren_rule_checkout_cart_product_add_after"
                   instance="Tigren\GroupCatalogRule\Observer\ChangePriceAfterAddToCart"/>
     </event>
+
+
+    <!--    save to tigren_customer_group_catalog_history-->
+    <event name="sales_order_save_after">
+        <observer name="Tigren_producthistory" instance="Tigren\GroupCatalogRule\Observer\ProductHistory"/>
+    </event>
 </config>

@@ -8,11 +8,21 @@
 namespace Tigren\GroupCatalogRule\Controller\Adminhtml\Customer;
 
 use Magento\Backend\App\Action;
+use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\ResultFactory;
+use Magento\Framework\Controller\ResultInterface;
+use Magento\Framework\View\Result\Page;
 
 
+/**
+ * Class NewAction
+ * @package Tigren\GroupCatalogRule\Controller\Adminhtml\Customer
+ */
 class NewAction extends Action
 {
+    /**
+     * @return ResponseInterface|ResultInterface|Page|Page&ResultInterface
+     */
     public function execute()
     {
 

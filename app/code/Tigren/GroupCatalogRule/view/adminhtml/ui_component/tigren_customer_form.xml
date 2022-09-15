@@ -45,7 +45,6 @@
         <argument name="dataProvider" xsi:type="configurableObject">
             <argument name="class" xsi:type="string">
                 Tigren\GroupCatalogRule\Model\DataProvider
-                <!--                Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider-->
             </argument>
             <argument name="name" xsi:type="string">tigren_customer_form_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">rule_id</argument>
@@ -233,21 +232,20 @@
                     <item name="additionalClasses" xsi:type="string">amgroupcat-fieldset-child</item>
                 </item>
             </argument>
-            <field name="customer_group_ids">
+            <field name="customer_group_id">
                 <argument name="data" xsi:type="array">
                     <item name="config" xsi:type="array">
                         <item name="labelVisible" xsi:type="boolean">false</item>
                         <item name="additionalClasses" xsi:type="string">amgroupcat-field-multiselect</item>
                         <item name="dataType" xsi:type="string">number</item>
                         <item name="formElement" xsi:type="string">multiselect</item>
-                        <item name="source" xsi:type="string">groupcat_rule</item>
-                        <item name="dataScope" xsi:type="string">customer_group_ids</item>
+                        <item name="source" xsi:type="string">customer_group_id</item>
+                        <item name="dataScope" xsi:type="string">customer_group_id</item>
                     </item>
                     <item name="options" xsi:type="object">Magento\CatalogRule\Model\Rule\CustomerGroupsOptionsProvider
                     </item>
                 </argument>
             </field>
         </fieldset>
-
     </fieldset>
 </form>

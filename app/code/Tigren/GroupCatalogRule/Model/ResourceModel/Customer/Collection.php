@@ -20,7 +20,6 @@ class Collection extends AbstractCollection
      */
     protected function _construct()
     {
-        //     $collection = $this->collection->create();
         $this->_init('Tigren\GroupCatalogRule\Model\Customer', 'Tigren\GroupCatalogRule\Model\ResourceModel\Customer');
     }
 }

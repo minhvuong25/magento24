@@ -20,6 +20,10 @@ use Magento\SalesRule\Model\Rule;
 use Magento\Ui\Component\Layout\Tabs\TabInterface;
 
 
+/**
+ * Class CustomerConditions
+ * @package Tigren\GroupCatalogRule\Block\Adminhtml\Customer\Edit\Tab
+ */
 class CustomerConditions extends Generic implements
     TabInterface
 {
