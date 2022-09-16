@@ -8,6 +8,7 @@
 namespace Tigren\AdvancedCheckout\Observer;
 
 use Magento\Customer\Model\CustomerFactory;
+use Magento\Customer\Model\Session;
 use Magento\Framework\App\ObjectManager;
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
@@ -48,10 +49,10 @@ class CreateCustomerAccount implements ObserverInterface
      * @param StoreManagerInterface $storeManager
      */
     public function __construct(
-        LoggerInterface                 $logger,
-        CustomerFactory                 $customerFactory,
-        StoreManagerInterface           $storeManager,
-        \Magento\Customer\Model\Session $customerSession
+        LoggerInterface       $logger,
+        CustomerFactory       $customerFactory,
+        StoreManagerInterface $storeManager,
+        Session               $customerSession
     )
     {
         $this->_storeManager = $storeManager;

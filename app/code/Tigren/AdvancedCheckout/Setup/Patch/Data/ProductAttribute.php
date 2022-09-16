@@ -1,12 +1,24 @@
 <?php
+/*
+ * @author    Tigren Solutions <info@tigren.com>
+ * @copyright Copyright (c) 2022 Tigren Solutions <https://www.tigren.com>. All rights reserved.
+ * @license   Open Software License ("OSL") v. 3.0
+ */
 
 namespace Tigren\AdvancedCheckout\Setup\Patch\Data;
 
+use Magento\Catalog\Model\Product;
+use Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface;
+use Magento\Eav\Model\Entity\Attribute\Source\Boolean;
 use Magento\Eav\Setup\EavSetup;
 use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 
+/**
+ * Class ProductAttribute
+ * @package Tigren\AdvancedCheckout\Setup\Patch\Data
+ */
 class ProductAttribute implements DataPatchInterface
 {
 
@@ -28,7 +40,7 @@ class ProductAttribute implements DataPatchInterface
     {
         /** @var EavSetup $eavSetup */
         $eavSetup = $this->_eavSetupFactory->create(['setup' => $this->_moduleDataSetup]);
-        $eavSetup->addAttribute(\Magento\Catalog\Model\Product::ENTITY,
+        $eavSetup->addAttribute(Product::ENTITY,
             'allow_multi_order',
             [
                 'group' => 'General',
@@ -38,8 +50,8 @@ class ProductAttribute implements DataPatchInterface
                 'label' => 'Allow Multi Order',
                 'input' => 'boolean',
                 'class' => '',
-                'source' => \Magento\Eav\Model\Entity\Attribute\Source\Boolean::class,
-                'global' => \Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface::SCOPE_GLOBAL,
+                'source' => Boolean::class,
+                'global' => ScopedAttributeInterface::SCOPE_GLOBAL,
                 'visible' => true,
                 'required' => false,
                 'user_defined' => true,

@@ -3,7 +3,6 @@
  * @author    Tigren Solutions <info@tigren.com>
  * @copyright Copyright (c) 2022 Tigren Solutions <https://www.tigren.com>. All rights reserved.
  * @license   Open Software License ("OSL") v. 3.0
- *
  */
 
 namespace Tigren\AdvancedCheckout\Controller\Cart;
@@ -12,6 +11,10 @@ use Magento\Checkout\Model\Sidebar;
 use Magento\Framework\App\Action\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Checkout\Model\Session as CheckoutSession;
+use Magento\Framework\App\ResponseInterface;
+use Magento\Framework\Controller\ResultInterface;
+use Magento\Framework\Exception\LocalizedException;
+use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Quote\Model\Quote\Item;
 use  Magento\Checkout\Model\Cart as CustomerCart;
 
@@ -22,10 +25,22 @@ use  Magento\Checkout\Model\Cart as CustomerCart;
  */
 class ClearCarts extends Action
 {
+    /**
+     * @var CustomerCart
+     */
     protected $cart;
 
+    /**
+     * @var CheckoutSession
+     */
     protected $checkoutSession;
 
+    /**
+     * @param Context $context
+     * @param CheckoutSession $checkoutSession
+     * @param CustomerCart $cart
+     * @param Sidebar $sidebar
+     */
     public function __construct(
         Context         $context,
         CheckoutSession $checkoutSession,
@@ -39,6 +54,11 @@ class ClearCarts extends Action
         parent::__construct($context);
     }
 
+    /**
+     * @return ResponseInterface|ResultInterface|void
+     * @throws LocalizedException
+     * @throws NoSuchEntityException
+     */
     public function execute()
     {
         $all_item = $this->checkoutSession->getQuote()->getAllVisibleItems();
