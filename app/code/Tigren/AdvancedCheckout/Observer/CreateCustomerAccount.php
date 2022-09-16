@@ -16,6 +16,7 @@ use Magento\Framework\Exception\LocalizedException;
 use Magento\Store\Model\StoreManagerInterface;
 use Magento\TestFramework\Inspection\Exception;
 use Psr\Log\LoggerInterface;
+use Magento\Customer\Api\AccountManagementInterface;
 
 /**
  * Class CreateCustomerAccount
@@ -42,6 +43,7 @@ class CreateCustomerAccount implements ObserverInterface
      * @var CustomerFactory
      */
     protected $customerFactory;
+    protected $customerAccountManagement;
 
     /**
      * @param LoggerInterface $logger
@@ -49,16 +51,18 @@ class CreateCustomerAccount implements ObserverInterface
      * @param StoreManagerInterface $storeManager
      */
     public function __construct(
-        LoggerInterface       $logger,
-        CustomerFactory       $customerFactory,
-        StoreManagerInterface $storeManager,
-        Session               $customerSession
+        LoggerInterface            $logger,
+        CustomerFactory            $customerFactory,
+        StoreManagerInterface      $storeManager,
+        Session                    $customerSession,
+        AccountManagementInterface $customerAccountManagement
     )
     {
         $this->_storeManager = $storeManager;
         $this->logger = $logger;
         $this->customerFactory = $customerFactory;
         $this->customerSession = $customerSession;
+        $this->emailexsit = $customerAccountManagement;
     }
 
     /**
@@ -89,7 +93,6 @@ class CreateCustomerAccount implements ObserverInterface
                 $customer->setFirstname($f_name);
                 $customer->setLastname($l_name);
                 $customer->setPassword("password");
-
                 // Save data
                 $customer->save();
             } catch (Exception $e) {

@@ -5920,3 +5920,123 @@ Stack trace:
 [2022-09-15T14:37:46.862175+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
 [2022-09-15T14:37:46.862305+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
 [2022-09-15T14:37:46.862398+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:16.204107+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:16.205527+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:16.205683+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:16.205754+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:16.205814+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:16.205884+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:38.572529+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:38.573282+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:38.573404+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:45:38.573785+00:00] main.INFO: Broken reference: the 'skip_gallery_before' tries to reorder itself towards 'product.info.media.image', but their parents are different: 'skip_gallery_before.wrapper' and 'product.info.media' respectively. [] []
+[2022-09-16T03:45:38.573829+00:00] main.INFO: Broken reference: the 'skip_gallery_after' tries to reorder itself towards 'product.info.media.image', but their parents are different: 'skip_gallery_after.wrapper' and 'product.info.media' respectively. [] []
+[2022-09-16T03:45:39.840718+00:00] main.ERROR: Unable to resolve the source file for 'frontend/Magento/luma/en_US/myjs.js' [] []
+[2022-09-16T03:45:39.841521+00:00] main.CRITICAL: Unable to resolve the source file for 'frontend/Magento/luma/en_US/myjs.js' [] []
+[2022-09-16T03:45:48.063789+00:00] main.ERROR: Unable to resolve the source file for 'frontend/Magento/luma/en_US/myjs.js' [] []
+[2022-09-16T03:45:48.065035+00:00] main.CRITICAL: Unable to resolve the source file for 'frontend/Magento/luma/en_US/myjs.js' [] []
+[2022-09-16T03:59:10.171580+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2022-09-16T03:59:10.172451+00:00] main.INFO: Broken reference: the 'header-wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2022-09-16T03:59:10.172540+00:00] main.INFO: Broken reference: the 'navigation.sections' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:10.172632+00:00] main.INFO: Broken reference: the 'top.container' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:10.172686+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:10.172791+00:00] main.INFO: Broken reference: the 'footer' element cannot be added as child to 'footer-container', because the latter doesn't exist [] []
+[2022-09-16T03:59:10.172918+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:10.173004+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:10.173141+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:10.173306+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' tries to reorder itself towards '', but their parents are different: 'header.container' and '' respectively. [] []
+[2022-09-16T03:59:10.173386+00:00] main.INFO: Broken reference: the 'navigation.sections' tries to reorder itself towards '', but their parents are different: 'page.top' and '' respectively. [] []
+[2022-09-16T03:59:50.303509+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.305705+00:00] main.INFO: Broken reference: the 'header-wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.305797+00:00] main.INFO: Broken reference: the 'navigation.sections' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.305883+00:00] main.INFO: Broken reference: the 'top.container' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.305937+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.306048+00:00] main.INFO: Broken reference: the 'footer' element cannot be added as child to 'footer-container', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.306180+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.306284+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.306473+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.306607+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' tries to reorder itself towards '', but their parents are different: 'header.container' and '' respectively. [] []
+[2022-09-16T03:59:50.306684+00:00] main.INFO: Broken reference: the 'navigation.sections' tries to reorder itself towards '', but their parents are different: 'page.top' and '' respectively. [] []
+[2022-09-16T03:59:50.407294+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.407501+00:00] main.INFO: Broken reference: the 'header-wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.407554+00:00] main.INFO: Broken reference: the 'navigation.sections' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.407604+00:00] main.INFO: Broken reference: the 'top.container' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.407637+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.407712+00:00] main.INFO: Broken reference: the 'footer' element cannot be added as child to 'footer-container', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.407845+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.407921+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.408033+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.408117+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' tries to reorder itself towards '', but their parents are different: 'header.container' and '' respectively. [] []
+[2022-09-16T03:59:50.408171+00:00] main.INFO: Broken reference: the 'navigation.sections' tries to reorder itself towards '', but their parents are different: 'page.top' and '' respectively. [] []
+[2022-09-16T03:59:50.602199+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.602471+00:00] main.INFO: Broken reference: the 'header-wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.602540+00:00] main.INFO: Broken reference: the 'navigation.sections' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.602623+00:00] main.INFO: Broken reference: the 'top.container' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.602693+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.602810+00:00] main.INFO: Broken reference: the 'footer' element cannot be added as child to 'footer-container', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.602955+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.603040+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.603239+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T03:59:50.603367+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' tries to reorder itself towards '', but their parents are different: 'header.container' and '' respectively. [] []
+[2022-09-16T03:59:50.603446+00:00] main.INFO: Broken reference: the 'navigation.sections' tries to reorder itself towards '', but their parents are different: 'page.top' and '' respectively. [] []
+[2022-09-16T03:59:54.657967+00:00] main.ERROR: Laminas\Mail\Transport\Exception\RuntimeException: Unable to send mail: Unknown error in /home/minhvuong/Work/htdocs/magento24/vendor/laminas/laminas-mail/src/Transport/Sendmail.php:310
+Stack trace:
+#0 /home/minhvuong/Work/htdocs/magento24/vendor/laminas/laminas-mail/src/Transport/Sendmail.php(149): Laminas\Mail\Transport\Sendmail->mailHandler()
+#1 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-email/Model/Transport.php(111): Laminas\Mail\Transport\Sendmail->send()
+#2 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Email\Model\Transport->sendMessage()
+#3 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Email\Model\Transport\Interceptor->___callParent()
+#4 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-customer-sample-data/Magento/Framework/Mail/Transport/MailPlugin.php(32): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\CustomerSampleData\Magento\Framework\Mail\Transport\MailPlugin->aroundSendMessage()
+#6 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-email/Model/Mail/TransportInterfacePlugin.php(48): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#7 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Email\Model\Mail\TransportInterfacePlugin->aroundSendMessage()
+#8 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Email\Model\Transport\Interceptor->Magento\Framework\Interception\{closure}()
+#9 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Email/Model/Transport/Interceptor.php(23): Magento\Email\Model\Transport\Interceptor->___callPlugins()
+#10 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-sales/Model/Order/Email/SenderBuilder.php(75): Magento\Email\Model\Transport\Interceptor->sendMessage()
+#11 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-sales/Model/Order/Email/Sender.php(86): Magento\Sales\Model\Order\Email\SenderBuilder->send()
+#12 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-sales/Model/Order/Email/Sender/OrderSender.php(105): Magento\Sales\Model\Order\Email\Sender->checkAndSend()
+#13 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-quote/Observer/SubmitObserver.php(62): Magento\Sales\Model\Order\Email\Sender\OrderSender->send()
+#14 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Event/Invoker/InvokerDefault.php(88): Magento\Quote\Observer\SubmitObserver->execute()
+#15 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Event/Invoker/InvokerDefault.php(74): Magento\Framework\Event\Invoker\InvokerDefault->_callObserverMethod()
+#16 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Event/Manager.php(66): Magento\Framework\Event\Invoker\InvokerDefault->dispatch()
+#17 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/Event/Manager/Proxy.php(95): Magento\Framework\Event\Manager->dispatch()
+#18 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-quote/Model/QuoteManagement.php(609): Magento\Framework\Event\Manager\Proxy->dispatch()
+#19 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-quote/Model/QuoteManagement.php(483): Magento\Quote\Model\QuoteManagement->submitQuote()
+#20 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Quote\Model\QuoteManagement->submit()
+#21 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Quote\Model\QuoteManagement\Interceptor->___callParent()
+#22 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-sales-rule/Plugin/CouponUsagesIncrement.php(54): Magento\Quote\Model\QuoteManagement\Interceptor->Magento\Framework\Interception\{closure}()
+#23 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): Magento\SalesRule\Plugin\CouponUsagesIncrement->aroundSubmit()
+#24 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Quote\Model\QuoteManagement\Interceptor->Magento\Framework\Interception\{closure}()
+#25 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Quote/Model/QuoteManagement/Interceptor.php(68): Magento\Quote\Model\QuoteManagement\Interceptor->___callPlugins()
+#26 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-quote/Model/QuoteManagement.php(441): Magento\Quote\Model\QuoteManagement\Interceptor->submit()
+#27 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Quote\Model\QuoteManagement->placeOrder()
+#28 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Quote\Model\QuoteManagement\Interceptor->___callParent()
+#29 /home/minhvuong/Work/htdocs/magento24/vendor/paypal/module-braintree-core/Plugin/OrderCancellation.php(63): Magento\Quote\Model\QuoteManagement\Interceptor->Magento\Framework\Interception\{closure}()
+#30 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(135): PayPal\Braintree\Plugin\OrderCancellation->aroundPlaceOrder()
+#31 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Quote\Model\QuoteManagement\Interceptor->Magento\Framework\Interception\{closure}()
+#32 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Quote/Model/QuoteManagement/Interceptor.php(50): Magento\Quote\Model\QuoteManagement\Interceptor->___callPlugins()
+#33 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-quote/Model/GuestCart/GuestCartManagement.php(87): Magento\Quote\Model\QuoteManagement\Interceptor->placeOrder()
+#34 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Quote/Model/GuestCart/GuestCartManagement/Interceptor.php(41): Magento\Quote\Model\GuestCart\GuestCartManagement->placeOrder()
+#35 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-checkout/Model/GuestPaymentInformationManagement.php(127): Magento\Quote\Model\GuestCart\GuestCartManagement\Interceptor->placeOrder()
+#36 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Checkout\Model\GuestPaymentInformationManagement->savePaymentInformationAndPlaceOrder()
+#37 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Checkout\Model\GuestPaymentInformationManagement\Interceptor->___callParent()
+#38 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Checkout\Model\GuestPaymentInformationManagement\Interceptor->Magento\Framework\Interception\{closure}()
+#39 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Checkout/Model/GuestPaymentInformationManagement/Interceptor.php(23): Magento\Checkout\Model\GuestPaymentInformationManagement\Interceptor->___callPlugins()
+#40 [internal function]: Magento\Checkout\Model\GuestPaymentInformationManagement\Interceptor->savePaymentInformationAndPlaceOrder()
+#41 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-webapi/Controller/Rest/SynchronousRequestProcessor.php(95): call_user_func_array()
+#42 /home/minhvuong/Work/htdocs/magento24/vendor/magento/module-webapi/Controller/Rest.php(188): Magento\Webapi\Controller\Rest\SynchronousRequestProcessor->process()
+#43 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest->dispatch()
+#44 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\Interceptor->___callParent()
+#45 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Webapi/Controller/Rest/Interceptor.php(23): Magento\Webapi\Controller\Rest\Interceptor->___callPlugins()
+#47 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Http.php(116): Magento\Webapi\Controller\Rest\Interceptor->dispatch()
+#48 /home/minhvuong/Work/htdocs/magento24/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /home/minhvuong/Work/htdocs/magento24/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /home/minhvuong/Work/htdocs/magento24/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} [] []
+[2022-09-16T03:59:54.658800+00:00] main.ERROR: Unable to send mail. Please try again later. [] []
+[2022-09-16T03:59:55.039469+00:00] main.ERROR: A customer with the same email address already exists in an associated website. [] []
+[2022-09-16T04:00:13.029116+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T04:00:13.029504+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T04:00:13.029648+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2022-09-16T04:00:13.029847+00:00] main.INFO: Broken reference: the 'checkout.cart.item.renderers.gift-card.actions.gift_options' element cannot be added as child to 'checkout.cart.item.renderers.gift-card.actions', because the latter doesn't exist [] []
+[2022-09-16T04:00:13.030119+00:00] main.INFO: Broken reference: the 'checkout.cart.item.renderers.gift-card.actions.gift_options' tries to reorder itself towards '', but their parents are different: 'checkout.cart.item.renderers.gift-card.actions' and '' respectively. [] []
