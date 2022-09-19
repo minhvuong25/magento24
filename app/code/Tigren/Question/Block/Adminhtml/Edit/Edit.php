@@ -25,21 +25,20 @@ class Edit extends Container
      */
     protected $_coreRegistry = null;
 
-    /**
-     * @param Context $context
-     * @param Registry $registry
-     * @param array $data
-     */
-    public function __construct(
-        Context  $context,
-        Registry $registry,
-        array    $data = []
-    )
-    {
-        die("aa");
-        $this->_coreRegistry = $registry;
-        parent::__construct($context, $data);
-    }
+//    /**
+//     * @param Context $context
+//     * @param Registry $registry
+//     * @param array $data
+//     */
+//    public function __construct(
+//        Context  $context,
+//        Registry $registry,
+//        array    $data = []
+//    )
+//    {
+//        $this->_coreRegistry = $registry;
+//        parent::__construct($context, $data);
+//    }
 
     /**
      * Department edit block

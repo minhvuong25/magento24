@@ -10,6 +10,7 @@ namespace Tigen\Question\Block\Adminhtml\Edit;
 use Magento\Backend\Block\Template\Context;
 use Magento\Backend\Block\Widget\Form\Generic;
 use Magento\Framework\Data\FormFactory;
+use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Registry;
 use Magento\Store\Model\System\Store;
 use Tigren\Question\Model\Question;
@@ -20,7 +21,6 @@ use Tigren\Question\Model\Question;
  */
 class Form extends Generic
 {
-
     /**
      * @var Store
      */
@@ -61,13 +61,13 @@ class Form extends Generic
      * Prepare form
      *
      * @return $this
+     * @throws LocalizedException
      */
     protected function _prepareForm()
     {
         /** @var Question $model */
         $model = $this->_coreRegistry->registry('Tigren_Question');
 
-        /** @var \Magento\Framework\Data\Form $form */
         $form = $this->_formFactory->create(
             ['data' => ['id' => 'edit_form', 'action' => $this->getData('action'), 'method' => 'post']]
         );

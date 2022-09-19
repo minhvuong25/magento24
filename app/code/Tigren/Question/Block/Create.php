@@ -24,6 +24,4 @@ class Create extends Template
     {
         parent::__construct($context);
     }
-
-
 }

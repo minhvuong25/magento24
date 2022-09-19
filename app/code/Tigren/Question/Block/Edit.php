@@ -24,14 +24,17 @@ class Edit extends Template
      * @var PageFactory
      */
     protected $_pageFactory;
+
     /**
      * @var Registry
      */
     protected $_coreRegistry;
+
     /**
      * @var QuestionFactory
      */
     protected $_contactLoader;
+
     /**
      * @var
      */
@@ -52,12 +55,10 @@ class Edit extends Template
         array           $data = []
     )
     {
-
         $this->_pageFactory = $pageFactory;
         $this->_coreRegistry = $coreRegistry;
         $this->_contactLoader = $contactLoader;
         return parent::__construct($context, $data);
-
     }
 
     /**
@@ -78,6 +79,5 @@ class Edit extends Template
         $result = $postData->load($id);
         $result = $result->getData();
         return $result;
-
     }
 }
