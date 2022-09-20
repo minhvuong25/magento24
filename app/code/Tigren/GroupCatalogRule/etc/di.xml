@@ -36,9 +36,7 @@
                 type="Tigren\GroupCatalogRule\Pricing\Render\FinalPriceBox"/>
     <!--    add to cart hide no login-->
     <type name="Magento\Catalog\Model\Product">
-        <plugin name="Hidecartbutton" type="Tigren\GroupCatalogRule\Plugin\Cart_Hide\HideCartButton" sortOrder="1"
-                disabled="false"/>
+        <plugin name="hidecartbutton" type="Tigren\GroupCatalogRule\Plugin\Model\Product" sortOrder="1"/>
     </type>
 </config>
-
 

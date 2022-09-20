@@ -2,6 +2,7 @@
 
 namespace Tigren\GroupCatalogRule\Plugin\Model;
 
+use Magento\Customer\Model\Session;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\Model\Context;
 use PHPUnit\TextUI\Help;
@@ -9,14 +10,22 @@ use Tigren\GroupCatalogRule\Helper\Data;
 
 class Product
 {
+    protected $customerSessionFactory;
 
-    public function afterGetPrice(\Magento\Catalog\Model\Product $subject, $result)
+    public function __construct(
+        Session $customerSessionFactory
+    )
     {
-//        $price_product = $subject->getPrice();
-//        $discount = $this->helper->show_discount($subject->getSku());
-//        $price_after_discount = $price_product - ($price_product * $discount) / 100;
-//        return $price_after_discount;
-        $result += 10;
-        return $result;
+        $this->customerSessionFactory = $customerSessionFactory;
+    }
+
+
+    public function afterIsSaleable(\Magento\Catalog\Model\Product $subject)
+    {
+        if ($this->customerSessionFactory->isLoggedIn()) {
+            return $subject->isSaleable();
+        } else {
+            return false;
+        }
     }
 }
