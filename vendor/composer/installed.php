@@ -65,12 +65,12 @@
             'dev_requirement' => false,
         ),
         'aws/aws-sdk-php' => array(
-            'pretty_version' => '3.235.12',
-            'version' => '3.235.12.0',
+            'pretty_version' => '3.235.14',
+            'version' => '3.235.14.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../aws/aws-sdk-php',
             'aliases' => array(),
-            'reference' => 'e0ebecfb0284dc44dc99a172cd9c68c40739904c',
+            'reference' => 'd6a696800e1eceec47e8f84ded88a88f4790d016',
             'dev_requirement' => false,
         ),
         'bacon/bacon-qr-code' => array(
@@ -686,12 +686,12 @@
             'dev_requirement' => false,
         ),
         'laminas/laminas-servicemanager' => array(
-            'pretty_version' => '3.16.0',
-            'version' => '3.16.0.0',
+            'pretty_version' => '3.17.0',
+            'version' => '3.17.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laminas/laminas-servicemanager',
             'aliases' => array(),
-            'reference' => '863c66733740cd36ebf5e700f4258ef2c68a2a24',
+            'reference' => '360be5f16955dd1edbcce1cfaa98ed82a17f02ec',
             'dev_requirement' => false,
         ),
         'laminas/laminas-session' => array(
@@ -4474,8 +4474,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '^1.0',
-                1 => '1.0',
+                0 => '1.0',
+                1 => '^1.0',
             ),
         ),
         'psr/event-dispatcher' => array(
@@ -5377,12 +5377,12 @@
             'dev_requirement' => false,
         ),
         'webonyx/graphql-php' => array(
-            'pretty_version' => 'v14.11.6',
-            'version' => '14.11.6.0',
+            'pretty_version' => 'v14.11.8',
+            'version' => '14.11.8.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../webonyx/graphql-php',
             'aliases' => array(),
-            'reference' => '6070542725b61fc7d0654a8a9855303e5e157434',
+            'reference' => '04a48693acd785330eefd3b0e4fa67df8dfee7c3',
             'dev_requirement' => false,
         ),
         'weew/helpers-array' => array(

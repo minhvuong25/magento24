@@ -10,13 +10,32 @@ namespace Tigren\GroupCatalogRule\Model\OptionSource\Rule;
 
 use Magento\Framework\Data\OptionSourceInterface;
 
+/**
+ * Class PriceAction
+ * @package Tigren\GroupCatalogRule\Model\OptionSource\Rule
+ */
 class PriceAction implements OptionSourceInterface
 {
+    /**
+     *
+     */
     public const SHOW = 0;
+    /**
+     *
+     */
     public const HIDE = 1;
+    /**
+     *
+     */
     public const REPLACE = 2;
+    /**
+     *
+     */
     public const REPLACE_TO_REQUEST_FORM = 3;
 
+    /**
+     * @return array[]
+     */
     public function toOptionArray(): array
     {
         return [
