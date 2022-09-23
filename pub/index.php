@@ -8,6 +8,7 @@
 
 use Magento\Framework\App\Bootstrap;
 
+//ini_set('memory_limit', 256);
 try {
     require __DIR__ . '/../app/bootstrap.php';
 } catch (\Exception $e) {
