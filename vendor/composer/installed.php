@@ -65,12 +65,12 @@
             'dev_requirement' => false,
         ),
         'aws/aws-sdk-php' => array(
-            'pretty_version' => '3.235.14',
-            'version' => '3.235.14.0',
+            'pretty_version' => '3.236.1',
+            'version' => '3.236.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../aws/aws-sdk-php',
             'aliases' => array(),
-            'reference' => 'd6a696800e1eceec47e8f84ded88a88f4790d016',
+            'reference' => '1e8d1abe7582968df16a2e7a87c5dcc51d0dfd1b',
             'dev_requirement' => false,
         ),
         'bacon/bacon-qr-code' => array(
@@ -4445,12 +4445,12 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '9.5.24',
-            'version' => '9.5.24.0',
+            'pretty_version' => '9.5.25',
+            'version' => '9.5.25.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
-            'reference' => 'd0aa6097bef9fd42458a9b3c49da32c6ce6129c5',
+            'reference' => '3e6f90ca7e3d02025b1d147bd8d4a89fd4ca8a1d',
             'dev_requirement' => true,
         ),
         'psr/cache' => array(
@@ -4474,8 +4474,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/event-dispatcher' => array(

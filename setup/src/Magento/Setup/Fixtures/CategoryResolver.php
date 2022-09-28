@@ -72,7 +72,7 @@ class CategoryResolver
         $categoryKey = $websiteId . $categoryName;
 
         if (!isset($this->categories[$categoryKey])) {
-            $website = $this->storeManager->getWebsite($websiteId);
+            $website = $this->storeManager->getWebsite($websiteId)
             $rootCategoryId = $website->getDefaultGroup()->getRootCategoryId();
             $website->getDefaultGroup()->getStoreId();
             $category = $this->collectionFactory->create()
